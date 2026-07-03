@@ -510,3 +510,1764 @@
       at step (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:287:14)
       at C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:273:13
       at async.call.result.err.err (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:223:11)
+[2m4:51:19 am[22m [31m[1m[vite][22m[39m [31mInternal server error: C:\Users\Akash\Downloads\Frontend-Grad\src\app\components\StudentDashboard.tsx: 'return' outside of function. (71:2)
+
+[0m [90m 69 |[31m   ][33m;[31m
+ [90m 70 |[31m
+[31m[1m>[22m[31m[90m 71 |[31m   [36mreturn[31m (
+ [90m    |[31m   [31m[1m^[22m[31m
+ [90m 72 |[31m     [33m<[31m[33mdiv[31m className[33m=[31m[32m"flex-1 overflow-y-auto bg-slate-50"[31m[33m>[31m
+ [90m 73 |[31m       [33m<[31m[33mdiv[31m className[33m=[31m[32m"p-6 max-w-6xl mx-auto space-y-6"[31m[33m>[31m
+ [90m 74 |[31m         {[90m/* Welcome */[31m}[0m[39m
+  Plugin: [35mvite:react-babel[39m
+  File: [36mC:/Users/Akash/Downloads/Frontend-Grad/src/app/components/StudentDashboard.tsx[39m:71:2
+[33m  69 |    ];
+  70 |  
+  71 |    return (
+     |    ^
+  72 |      <div className="flex-1 overflow-y-auto bg-slate-50">
+  73 |        <div className="p-6 max-w-6xl mx-auto space-y-6">[39m
+      at constructor (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:365:19)
+      at TypeScriptParserMixin.raise (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:6616:19)
+      at TypeScriptParserMixin.parseReturnStatement (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13153:12)
+      at TypeScriptParserMixin.parseStatementContent (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12815:21)
+      at TypeScriptParserMixin.parseStatementContent (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:9525:18)
+      at TypeScriptParserMixin.parseStatementLike (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12784:17)
+      at TypeScriptParserMixin.parseStatementListItem (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12764:17)
+      at TypeScriptParserMixin.parseBlockOrModuleBlockBody (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13333:61)
+      at TypeScriptParserMixin.parseBlockBody (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13326:10)
+      at TypeScriptParserMixin.parseBlock (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13314:10)
+      at TypeScriptParserMixin.parseStatementContent (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12875:21)
+      at TypeScriptParserMixin.parseStatementContent (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:9525:18)
+      at TypeScriptParserMixin.parseStatementLike (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12784:17)
+      at TypeScriptParserMixin.parseModuleItem (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12761:17)
+      at TypeScriptParserMixin.parseBlockOrModuleBlockBody (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13333:36)
+      at TypeScriptParserMixin.parseBlockBody (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13326:10)
+      at TypeScriptParserMixin.parseProgram (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12639:10)
+      at TypeScriptParserMixin.parseTopLevel (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12629:25)
+      at TypeScriptParserMixin.parse (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:14505:25)
+      at TypeScriptParserMixin.parse (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:10143:18)
+      at parse (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:14539:38)
+      at parser (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\core\lib\parser\index.js:41:34)
+      at parser.next (<anonymous>)
+      at normalizeFile (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\core\lib\transformation\normalize-file.js:51:37)
+      at normalizeFile.next (<anonymous>)
+      at run (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\core\lib\transformation\index.js:22:50)
+      at run.next (<anonymous>)
+      at transform (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\core\lib\transform.js:22:33)
+      at transform.next (<anonymous>)
+      at step (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:261:32)
+      at C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:273:13
+      at async.call.result.err.err (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:223:11)
+      at C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:189:28
+      at C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\core\lib\gensync-utils\async.js:67:7
+      at C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:113:33
+      at step (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:287:14)
+      at C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:273:13
+      at async.call.result.err.err (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:223:11)
+[2m4:51:36 am[22m [31m[1m[vite][22m[39m [31mInternal server error: C:\Users\Akash\Downloads\Frontend-Grad\src\app\components\StudentDashboard.tsx: 'return' outside of function. (72:2)
+
+[0m [90m 70 |[31m   ][33m;[31m
+ [90m 71 |[31m
+[31m[1m>[22m[31m[90m 72 |[31m   [36mreturn[31m (
+ [90m    |[31m   [31m[1m^[22m[31m
+ [90m 73 |[31m     [33m<[31m[33mdiv[31m className[33m=[31m[32m"flex-1 overflow-y-auto bg-slate-50"[31m[33m>[31m
+ [90m 74 |[31m       [33m<[31m[33mdiv[31m className[33m=[31m[32m"p-6 max-w-6xl mx-auto space-y-6"[31m[33m>[31m
+ [90m 75 |[31m         {[90m/* Welcome */[31m}[0m[39m
+  Plugin: [35mvite:react-babel[39m
+  File: [36mC:/Users/Akash/Downloads/Frontend-Grad/src/app/components/StudentDashboard.tsx[39m:72:2
+[33m  70 |    ];
+  71 |  
+  72 |    return (
+     |    ^
+  73 |      <div className="flex-1 overflow-y-auto bg-slate-50">
+  74 |        <div className="p-6 max-w-6xl mx-auto space-y-6">[39m
+      at constructor (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:365:19)
+      at TypeScriptParserMixin.raise (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:6616:19)
+      at TypeScriptParserMixin.parseReturnStatement (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13153:12)
+      at TypeScriptParserMixin.parseStatementContent (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12815:21)
+      at TypeScriptParserMixin.parseStatementContent (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:9525:18)
+      at TypeScriptParserMixin.parseStatementLike (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12784:17)
+      at TypeScriptParserMixin.parseStatementListItem (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12764:17)
+      at TypeScriptParserMixin.parseBlockOrModuleBlockBody (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13333:61)
+      at TypeScriptParserMixin.parseBlockBody (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13326:10)
+      at TypeScriptParserMixin.parseBlock (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13314:10)
+      at TypeScriptParserMixin.parseStatementContent (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12875:21)
+      at TypeScriptParserMixin.parseStatementContent (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:9525:18)
+      at TypeScriptParserMixin.parseStatementLike (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12784:17)
+      at TypeScriptParserMixin.parseModuleItem (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12761:17)
+      at TypeScriptParserMixin.parseBlockOrModuleBlockBody (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13333:36)
+      at TypeScriptParserMixin.parseBlockBody (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13326:10)
+      at TypeScriptParserMixin.parseProgram (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12639:10)
+      at TypeScriptParserMixin.parseTopLevel (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12629:25)
+      at TypeScriptParserMixin.parse (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:14505:25)
+      at TypeScriptParserMixin.parse (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:10143:18)
+      at parse (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:14539:38)
+      at parser (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\core\lib\parser\index.js:41:34)
+      at parser.next (<anonymous>)
+      at normalizeFile (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\core\lib\transformation\normalize-file.js:51:37)
+      at normalizeFile.next (<anonymous>)
+      at run (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\core\lib\transformation\index.js:22:50)
+      at run.next (<anonymous>)
+      at transform (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\core\lib\transform.js:22:33)
+      at transform.next (<anonymous>)
+      at step (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:261:32)
+      at C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:273:13
+      at async.call.result.err.err (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:223:11)
+      at C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:189:28
+      at C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\core\lib\gensync-utils\async.js:67:7
+      at C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:113:33
+      at step (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:287:14)
+      at C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:273:13
+      at async.call.result.err.err (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:223:11)
+[2m4:51:38 am[22m [31m[1m[vite][22m[39m [31mInternal server error: C:\Users\Akash\Downloads\Frontend-Grad\src\app\components\StudentDashboard.tsx: 'return' outside of function. (85:2)
+
+[0m [90m 83 |[31m   ][33m;[31m
+ [90m 84 |[31m
+[31m[1m>[22m[31m[90m 85 |[31m   [36mreturn[31m (
+ [90m    |[31m   [31m[1m^[22m[31m
+ [90m 86 |[31m     [33m<[31m[33mdiv[31m className[33m=[31m[32m"flex-1 overflow-y-auto bg-slate-50"[31m[33m>[31m
+ [90m 87 |[31m       [33m<[31m[33mdiv[31m className[33m=[31m[32m"p-6 max-w-6xl mx-auto space-y-6"[31m[33m>[31m
+ [90m 88 |[31m         {[90m/* Welcome */[31m}[0m[39m
+  Plugin: [35mvite:react-babel[39m
+  File: [36mC:/Users/Akash/Downloads/Frontend-Grad/src/app/components/StudentDashboard.tsx[39m:85:2
+[33m  83 |    ];
+  84 |  
+  85 |    return (
+     |    ^
+  86 |      <div className="flex-1 overflow-y-auto bg-slate-50">
+  87 |        <div className="p-6 max-w-6xl mx-auto space-y-6">[39m
+      at constructor (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:365:19)
+      at TypeScriptParserMixin.raise (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:6616:19)
+      at TypeScriptParserMixin.parseReturnStatement (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13153:12)
+      at TypeScriptParserMixin.parseStatementContent (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12815:21)
+      at TypeScriptParserMixin.parseStatementContent (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:9525:18)
+      at TypeScriptParserMixin.parseStatementLike (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12784:17)
+      at TypeScriptParserMixin.parseStatementListItem (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12764:17)
+      at TypeScriptParserMixin.parseBlockOrModuleBlockBody (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13333:61)
+      at TypeScriptParserMixin.parseBlockBody (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13326:10)
+      at TypeScriptParserMixin.parseBlock (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13314:10)
+      at TypeScriptParserMixin.parseStatementContent (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12875:21)
+      at TypeScriptParserMixin.parseStatementContent (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:9525:18)
+      at TypeScriptParserMixin.parseStatementLike (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12784:17)
+      at TypeScriptParserMixin.parseModuleItem (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12761:17)
+      at TypeScriptParserMixin.parseBlockOrModuleBlockBody (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13333:36)
+      at TypeScriptParserMixin.parseBlockBody (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13326:10)
+      at TypeScriptParserMixin.parseProgram (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12639:10)
+      at TypeScriptParserMixin.parseTopLevel (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12629:25)
+      at TypeScriptParserMixin.parse (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:14505:25)
+      at TypeScriptParserMixin.parse (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:10143:18)
+      at parse (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:14539:38)
+      at parser (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\core\lib\parser\index.js:41:34)
+      at parser.next (<anonymous>)
+      at normalizeFile (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\core\lib\transformation\normalize-file.js:51:37)
+      at normalizeFile.next (<anonymous>)
+      at run (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\core\lib\transformation\index.js:22:50)
+      at run.next (<anonymous>)
+      at transform (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\core\lib\transform.js:22:33)
+      at transform.next (<anonymous>)
+      at step (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:261:32)
+      at C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:273:13
+      at async.call.result.err.err (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:223:11)
+      at C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:189:28
+      at C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\core\lib\gensync-utils\async.js:67:7
+      at C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:113:33
+      at step (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:287:14)
+      at C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:273:13
+      at async.call.result.err.err (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:223:11)
+[2m4:51:51 am[22m [31m[1m[vite][22m[39m [31mInternal server error: C:\Users\Akash\Downloads\Frontend-Grad\src\app\components\StudentDashboard.tsx: Unexpected token (42:3)
+
+[0m [90m 40 |[31m }[33m,[31m [])[33m;[31m{
+ [90m 41 |[31m   
+[31m[1m>[22m[31m[90m 42 |[31m   })[33m;[31m
+ [90m    |[31m    [31m[1m^[22m[31m
+ [90m 43 |[31m   [36mconst[31m mentorRequests [33m=[31m [
+ [90m 44 |[31m     {
+ [90m 45 |[31m       mentor[33m:[31m [32m"Priya Sharma"[31m[33m,[31m[0m[39m
+  Plugin: [35mvite:react-babel[39m
+  File: [36mC:/Users/Akash/Downloads/Frontend-Grad/src/app/components/StudentDashboard.tsx[39m:42:3
+[33m  40 |  }, []);{
+  41 |    
+  42 |    });
+     |     ^
+  43 |    const mentorRequests = [
+  44 |      {[39m
+      at constructor (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:365:19)
+      at TypeScriptParserMixin.raise (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:6616:19)
+      at TypeScriptParserMixin.unexpected (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:6636:16)
+      at TypeScriptParserMixin.parseExprAtom (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:11459:22)
+      at TypeScriptParserMixin.parseExprAtom (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:4776:20)
+      at TypeScriptParserMixin.parseExprSubscripts (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:11098:23)
+      at TypeScriptParserMixin.parseUpdate (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:11083:21)
+      at TypeScriptParserMixin.parseMaybeUnary (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:11063:23)
+      at TypeScriptParserMixin.parseMaybeUnary (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:9854:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:10916:61)
+      at TypeScriptParserMixin.parseExprOps (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:10921:23)
+      at TypeScriptParserMixin.parseMaybeConditional (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:10898:23)
+      at TypeScriptParserMixin.parseMaybeAssign (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:10848:21)
+      at TypeScriptParserMixin.parseMaybeAssign (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:9803:20)
+      at TypeScriptParserMixin.parseExpressionBase (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:10801:23)
+      at C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:10797:39
+      at TypeScriptParserMixin.allowInAnd (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12438:16)
+      at TypeScriptParserMixin.parseExpression (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:10797:17)
+      at TypeScriptParserMixin.parseStatementContent (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12912:23)
+      at TypeScriptParserMixin.parseStatementContent (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:9525:18)
+      at TypeScriptParserMixin.parseStatementLike (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12784:17)
+      at TypeScriptParserMixin.parseModuleItem (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12761:17)
+      at TypeScriptParserMixin.parseBlockOrModuleBlockBody (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13333:36)
+      at TypeScriptParserMixin.parseBlockBody (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13326:10)
+      at TypeScriptParserMixin.parseProgram (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12639:10)
+      at TypeScriptParserMixin.parseTopLevel (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12629:25)
+      at TypeScriptParserMixin.parse (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:14505:25)
+      at TypeScriptParserMixin.parse (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:10143:18)
+      at parse (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:14539:38)
+      at parser (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\core\lib\parser\index.js:41:34)
+      at parser.next (<anonymous>)
+      at normalizeFile (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\core\lib\transformation\normalize-file.js:51:37)
+      at normalizeFile.next (<anonymous>)
+      at run (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\core\lib\transformation\index.js:22:50)
+      at run.next (<anonymous>)
+      at transform (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\core\lib\transform.js:22:33)
+      at transform.next (<anonymous>)
+      at step (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:261:32)
+      at C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:273:13
+      at async.call.result.err.err (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:223:11)
+      at C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:189:28
+      at C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\core\lib\gensync-utils\async.js:67:7
+      at C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:113:33
+      at step (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:287:14)
+      at C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:273:13
+      at async.call.result.err.err (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:223:11)
+[2m4:51:54 am[22m [31m[1m[vite][22m[39m [31mInternal server error: C:\Users\Akash\Downloads\Frontend-Grad\src\app\components\StudentDashboard.tsx: 'return' outside of function. (78:2)
+
+[0m [90m 76 |[31m   ][33m;[31m
+ [90m 77 |[31m
+[31m[1m>[22m[31m[90m 78 |[31m   [36mreturn[31m (
+ [90m    |[31m   [31m[1m^[22m[31m
+ [90m 79 |[31m     [33m<[31m[33mdiv[31m className[33m=[31m[32m"flex-1 overflow-y-auto bg-slate-50"[31m[33m>[31m
+ [90m 80 |[31m       [33m<[31m[33mdiv[31m className[33m=[31m[32m"p-6 max-w-6xl mx-auto space-y-6"[31m[33m>[31m
+ [90m 81 |[31m         {[90m/* Welcome */[31m}[0m[39m
+  Plugin: [35mvite:react-babel[39m
+  File: [36mC:/Users/Akash/Downloads/Frontend-Grad/src/app/components/StudentDashboard.tsx[39m:78:2
+[33m  76 |    ];
+  77 |  
+  78 |    return (
+     |    ^
+  79 |      <div className="flex-1 overflow-y-auto bg-slate-50">
+  80 |        <div className="p-6 max-w-6xl mx-auto space-y-6">[39m
+      at constructor (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:365:19)
+      at TypeScriptParserMixin.raise (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:6616:19)
+      at TypeScriptParserMixin.parseReturnStatement (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13153:12)
+      at TypeScriptParserMixin.parseStatementContent (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12815:21)
+      at TypeScriptParserMixin.parseStatementContent (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:9525:18)
+      at TypeScriptParserMixin.parseStatementLike (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12784:17)
+      at TypeScriptParserMixin.parseModuleItem (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12761:17)
+      at TypeScriptParserMixin.parseBlockOrModuleBlockBody (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13333:36)
+      at TypeScriptParserMixin.parseBlockBody (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13326:10)
+      at TypeScriptParserMixin.parseProgram (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12639:10)
+      at TypeScriptParserMixin.parseTopLevel (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12629:25)
+      at TypeScriptParserMixin.parse (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:14505:25)
+      at TypeScriptParserMixin.parse (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:10143:18)
+      at parse (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:14539:38)
+      at parser (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\core\lib\parser\index.js:41:34)
+      at parser.next (<anonymous>)
+      at normalizeFile (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\core\lib\transformation\normalize-file.js:51:37)
+      at normalizeFile.next (<anonymous>)
+      at run (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\core\lib\transformation\index.js:22:50)
+      at run.next (<anonymous>)
+      at transform (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\core\lib\transform.js:22:33)
+      at transform.next (<anonymous>)
+      at step (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:261:32)
+      at C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:273:13
+      at async.call.result.err.err (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:223:11)
+      at C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:189:28
+      at C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\core\lib\gensync-utils\async.js:67:7
+      at C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:113:33
+      at step (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:287:14)
+      at C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:273:13
+      at async.call.result.err.err (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:223:11)
+[2m4:51:59 am[22m [31m[1m[vite][22m[39m [31mInternal server error: C:\Users\Akash\Downloads\Frontend-Grad\src\app\components\StudentDashboard.tsx: 'return' outside of function. (76:2)
+
+[0m [90m 74 |[31m   ][33m;[31m
+ [90m 75 |[31m
+[31m[1m>[22m[31m[90m 76 |[31m   [36mreturn[31m (
+ [90m    |[31m   [31m[1m^[22m[31m
+ [90m 77 |[31m     [33m<[31m[33mdiv[31m className[33m=[31m[32m"flex-1 overflow-y-auto bg-slate-50"[31m[33m>[31m
+ [90m 78 |[31m       [33m<[31m[33mdiv[31m className[33m=[31m[32m"p-6 max-w-6xl mx-auto space-y-6"[31m[33m>[31m
+ [90m 79 |[31m         {[90m/* Welcome */[31m}[0m[39m
+  Plugin: [35mvite:react-babel[39m
+  File: [36mC:/Users/Akash/Downloads/Frontend-Grad/src/app/components/StudentDashboard.tsx[39m:76:2
+[33m  74 |    ];
+  75 |  
+  76 |    return (
+     |    ^
+  77 |      <div className="flex-1 overflow-y-auto bg-slate-50">
+  78 |        <div className="p-6 max-w-6xl mx-auto space-y-6">[39m
+      at constructor (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:365:19)
+      at TypeScriptParserMixin.raise (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:6616:19)
+      at TypeScriptParserMixin.parseReturnStatement (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13153:12)
+      at TypeScriptParserMixin.parseStatementContent (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12815:21)
+      at TypeScriptParserMixin.parseStatementContent (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:9525:18)
+      at TypeScriptParserMixin.parseStatementLike (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12784:17)
+      at TypeScriptParserMixin.parseModuleItem (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12761:17)
+      at TypeScriptParserMixin.parseBlockOrModuleBlockBody (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13333:36)
+      at TypeScriptParserMixin.parseBlockBody (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13326:10)
+      at TypeScriptParserMixin.parseProgram (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12639:10)
+      at TypeScriptParserMixin.parseTopLevel (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12629:25)
+      at TypeScriptParserMixin.parse (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:14505:25)
+      at TypeScriptParserMixin.parse (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:10143:18)
+      at parse (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:14539:38)
+      at parser (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\core\lib\parser\index.js:41:34)
+      at parser.next (<anonymous>)
+      at normalizeFile (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\core\lib\transformation\normalize-file.js:51:37)
+      at normalizeFile.next (<anonymous>)
+      at run (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\core\lib\transformation\index.js:22:50)
+      at run.next (<anonymous>)
+      at transform (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\core\lib\transform.js:22:33)
+      at transform.next (<anonymous>)
+      at step (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:261:32)
+      at C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:273:13
+      at async.call.result.err.err (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:223:11)
+      at C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:189:28
+      at C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\core\lib\gensync-utils\async.js:67:7
+      at C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:113:33
+      at step (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:287:14)
+      at C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:273:13
+      at async.call.result.err.err (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:223:11)
+[2m4:52:29 am[22m [31m[1m[vite][22m[39m [31mInternal server error: C:\Users\Akash\Downloads\Frontend-Grad\src\app\components\StudentDashboard.tsx: Unexpected token (42:2)
+
+[0m [90m 40 |[31m }[33m,[31m [])[33m;[31m
+ [90m 41 |[31m   
+[31m[1m>[22m[31m[90m 42 |[31m   ][33m;[31m
+ [90m    |[31m   [31m[1m^[22m[31m
+ [90m 43 |[31m   [36mconst[31m messages [33m=[31m [
+ [90m 44 |[31m     {
+ [90m 45 |[31m       [36mfrom[31m[33m:[31m [32m"Priya Sharma"[31m[33m,[31m[0m[39m
+  Plugin: [35mvite:react-babel[39m
+  File: [36mC:/Users/Akash/Downloads/Frontend-Grad/src/app/components/StudentDashboard.tsx[39m:42:2
+[33m  40 |  }, []);
+  41 |    
+  42 |    ];
+     |    ^
+  43 |    const messages = [
+  44 |      {[39m
+      at constructor (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:365:19)
+      at TypeScriptParserMixin.raise (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:6616:19)
+      at TypeScriptParserMixin.unexpected (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:6636:16)
+      at TypeScriptParserMixin.parseExprAtom (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:11459:22)
+      at TypeScriptParserMixin.parseExprAtom (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:4776:20)
+      at TypeScriptParserMixin.parseExprSubscripts (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:11098:23)
+      at TypeScriptParserMixin.parseUpdate (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:11083:21)
+      at TypeScriptParserMixin.parseMaybeUnary (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:11063:23)
+      at TypeScriptParserMixin.parseMaybeUnary (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:9854:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:10916:61)
+      at TypeScriptParserMixin.parseExprOps (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:10921:23)
+      at TypeScriptParserMixin.parseMaybeConditional (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:10898:23)
+      at TypeScriptParserMixin.parseMaybeAssign (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:10848:21)
+      at TypeScriptParserMixin.parseMaybeAssign (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:9803:20)
+      at TypeScriptParserMixin.parseExpressionBase (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:10801:23)
+      at C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:10797:39
+      at TypeScriptParserMixin.allowInAnd (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12438:16)
+      at TypeScriptParserMixin.parseExpression (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:10797:17)
+      at TypeScriptParserMixin.parseStatementContent (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12912:23)
+      at TypeScriptParserMixin.parseStatementContent (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:9525:18)
+      at TypeScriptParserMixin.parseStatementLike (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12784:17)
+      at TypeScriptParserMixin.parseModuleItem (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12761:17)
+      at TypeScriptParserMixin.parseBlockOrModuleBlockBody (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13333:36)
+      at TypeScriptParserMixin.parseBlockBody (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13326:10)
+      at TypeScriptParserMixin.parseProgram (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12639:10)
+      at TypeScriptParserMixin.parseTopLevel (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12629:25)
+      at TypeScriptParserMixin.parse (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:14505:25)
+      at TypeScriptParserMixin.parse (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:10143:18)
+      at parse (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:14539:38)
+      at parser (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\core\lib\parser\index.js:41:34)
+      at parser.next (<anonymous>)
+      at normalizeFile (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\core\lib\transformation\normalize-file.js:51:37)
+      at normalizeFile.next (<anonymous>)
+      at run (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\core\lib\transformation\index.js:22:50)
+      at run.next (<anonymous>)
+      at transform (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\core\lib\transform.js:22:33)
+      at transform.next (<anonymous>)
+      at step (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:261:32)
+      at C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:273:13
+      at async.call.result.err.err (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:223:11)
+      at C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:189:28
+      at C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\core\lib\gensync-utils\async.js:67:7
+      at C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:113:33
+      at step (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:287:14)
+      at C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:273:13
+      at async.call.result.err.err (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:223:11)
+[2m4:52:35 am[22m [31m[1m[vite][22m[39m [31mInternal server error: C:\Users\Akash\Downloads\Frontend-Grad\src\app\components\StudentDashboard.tsx: Missing semicolon. (45:13)
+
+[0m [90m 43 |[31m     {
+ [90m 44 |[31m       [36mfrom[31m[33m:[31m [32m"Arjun Mehta"[31m[33m,[31m
+[31m[1m>[22m[31m[90m 45 |[31m       preview[33m:[31m [32m"Let's schedule a quick mentoring intro call."[31m[33m,[31m
+ [90m    |[31m              [31m[1m^[22m[31m
+ [90m 46 |[31m       time[33m:[31m [32m"Yesterday"[31m[33m,[31m
+ [90m 47 |[31m       unread[33m:[31m [36mfalse[31m[33m,[31m
+ [90m 48 |[31m     }[33m,[31m[0m[39m
+  Plugin: [35mvite:react-babel[39m
+  File: [36mC:/Users/Akash/Downloads/Frontend-Grad/src/app/components/StudentDashboard.tsx[39m:45:13
+[33m  43 |      {
+  44 |        from: "Arjun Mehta",
+  45 |        preview: "Let's schedule a quick mentoring intro call.",
+     |               ^
+  46 |        time: "Yesterday",
+  47 |        unread: false,[39m
+      at constructor (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:365:19)
+      at TypeScriptParserMixin.raise (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:6616:19)
+      at TypeScriptParserMixin.semicolon (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:6912:10)
+      at TypeScriptParserMixin.parseExpressionStatement (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13302:10)
+      at TypeScriptParserMixin.parseStatementContent (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12916:19)
+      at TypeScriptParserMixin.parseStatementContent (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:9525:18)
+      at TypeScriptParserMixin.parseStatementLike (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12784:17)
+      at TypeScriptParserMixin.parseStatement (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12777:17)
+      at TypeScriptParserMixin.parseLabeledStatement (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13295:95)
+      at TypeScriptParserMixin.parseStatementContent (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12914:19)
+      at TypeScriptParserMixin.parseStatementContent (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:9525:18)
+      at TypeScriptParserMixin.parseStatementLike (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12784:17)
+      at TypeScriptParserMixin.parseStatementListItem (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12764:17)
+      at TypeScriptParserMixin.parseBlockOrModuleBlockBody (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13333:61)
+      at TypeScriptParserMixin.parseBlockBody (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13326:10)
+      at TypeScriptParserMixin.parseBlock (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13314:10)
+      at TypeScriptParserMixin.parseStatementContent (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12875:21)
+      at TypeScriptParserMixin.parseStatementContent (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:9525:18)
+      at TypeScriptParserMixin.parseStatementLike (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12784:17)
+      at TypeScriptParserMixin.parseModuleItem (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12761:17)
+      at TypeScriptParserMixin.parseBlockOrModuleBlockBody (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13333:36)
+      at TypeScriptParserMixin.parseBlockBody (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13326:10)
+      at TypeScriptParserMixin.parseProgram (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12639:10)
+      at TypeScriptParserMixin.parseTopLevel (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12629:25)
+      at TypeScriptParserMixin.parse (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:14505:25)
+      at TypeScriptParserMixin.parse (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:10143:18)
+      at parse (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:14539:38)
+      at parser (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\core\lib\parser\index.js:41:34)
+      at parser.next (<anonymous>)
+      at normalizeFile (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\core\lib\transformation\normalize-file.js:51:37)
+      at normalizeFile.next (<anonymous>)
+      at run (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\core\lib\transformation\index.js:22:50)
+      at run.next (<anonymous>)
+      at transform (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\core\lib\transform.js:22:33)
+      at transform.next (<anonymous>)
+      at step (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:261:32)
+      at C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:273:13
+      at async.call.result.err.err (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:223:11)
+      at C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:189:28
+      at C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\core\lib\gensync-utils\async.js:67:7
+      at C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:113:33
+      at step (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:287:14)
+      at C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:273:13
+      at async.call.result.err.err (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:223:11)
+[2m4:52:40 am[22m [31m[1m[vite][22m[39m [31mInternal server error: C:\Users\Akash\Downloads\Frontend-Grad\src\app\components\StudentDashboard.tsx: 'return' outside of function. (43:2)
+
+[0m [90m 41 |[31m   
+ [90m 42 |[31m
+[31m[1m>[22m[31m[90m 43 |[31m   [36mreturn[31m (
+ [90m    |[31m   [31m[1m^[22m[31m
+ [90m 44 |[31m     [33m<[31m[33mdiv[31m className[33m=[31m[32m"flex-1 overflow-y-auto bg-slate-50"[31m[33m>[31m
+ [90m 45 |[31m       [33m<[31m[33mdiv[31m className[33m=[31m[32m"p-6 max-w-6xl mx-auto space-y-6"[31m[33m>[31m
+ [90m 46 |[31m         {[90m/* Welcome */[31m}[0m[39m
+  Plugin: [35mvite:react-babel[39m
+  File: [36mC:/Users/Akash/Downloads/Frontend-Grad/src/app/components/StudentDashboard.tsx[39m:43:2
+[33m  41 |    
+  42 |  
+  43 |    return (
+     |    ^
+  44 |      <div className="flex-1 overflow-y-auto bg-slate-50">
+  45 |        <div className="p-6 max-w-6xl mx-auto space-y-6">[39m
+      at constructor (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:365:19)
+      at TypeScriptParserMixin.raise (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:6616:19)
+      at TypeScriptParserMixin.parseReturnStatement (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13153:12)
+      at TypeScriptParserMixin.parseStatementContent (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12815:21)
+      at TypeScriptParserMixin.parseStatementContent (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:9525:18)
+      at TypeScriptParserMixin.parseStatementLike (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12784:17)
+      at TypeScriptParserMixin.parseModuleItem (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12761:17)
+      at TypeScriptParserMixin.parseBlockOrModuleBlockBody (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13333:36)
+      at TypeScriptParserMixin.parseBlockBody (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13326:10)
+      at TypeScriptParserMixin.parseProgram (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12639:10)
+      at TypeScriptParserMixin.parseTopLevel (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12629:25)
+      at TypeScriptParserMixin.parse (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:14505:25)
+      at TypeScriptParserMixin.parse (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:10143:18)
+      at parse (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:14539:38)
+      at parser (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\core\lib\parser\index.js:41:34)
+      at parser.next (<anonymous>)
+      at normalizeFile (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\core\lib\transformation\normalize-file.js:51:37)
+      at normalizeFile.next (<anonymous>)
+      at run (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\core\lib\transformation\index.js:22:50)
+      at run.next (<anonymous>)
+      at transform (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\core\lib\transform.js:22:33)
+      at transform.next (<anonymous>)
+      at step (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:261:32)
+      at C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:273:13
+      at async.call.result.err.err (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:223:11)
+      at C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:189:28
+      at C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\core\lib\gensync-utils\async.js:67:7
+      at C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:113:33
+      at step (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:287:14)
+      at C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:273:13
+      at async.call.result.err.err (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:223:11)
+[2m4:52:54 am[22m [31m[1m[vite][22m[39m [31mInternal server error: C:\Users\Akash\Downloads\Frontend-Grad\src\app\components\StudentDashboard.tsx: 'return' outside of function. (42:2)
+
+[0m [90m 40 |[31m }[33m,[31m [])[33m;[31m
+ [90m 41 |[31m   [36mif[31m (loading) {
+[31m[1m>[22m[31m[90m 42 |[31m   [36mreturn[31m [33m<[31m[33mdiv[31m className[33m=[31m[32m"p-6"[31m[33m>[31m[33mLoading[31m dashboard[33m...[31m[33m<[31m[33m/[31m[33mdiv[31m[33m>[31m[33m;[31m
+ [90m    |[31m   [31m[1m^[22m[31m
+ [90m 43 |[31m }
+ [90m 44 |[31m
+ [90m 45 |[31m [36mif[31m (error) {[0m[39m
+  Plugin: [35mvite:react-babel[39m
+  File: [36mC:/Users/Akash/Downloads/Frontend-Grad/src/app/components/StudentDashboard.tsx[39m:42:2
+[33m  40 |  }, []);
+  41 |    if (loading) {
+  42 |    return <div className="p-6">Loading dashboard...</div>;
+     |    ^
+  43 |  }
+  44 |  [39m
+      at constructor (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:365:19)
+      at TypeScriptParserMixin.raise (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:6616:19)
+      at TypeScriptParserMixin.parseReturnStatement (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13153:12)
+      at TypeScriptParserMixin.parseStatementContent (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12815:21)
+      at TypeScriptParserMixin.parseStatementContent (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:9525:18)
+      at TypeScriptParserMixin.parseStatementLike (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12784:17)
+      at TypeScriptParserMixin.parseStatementListItem (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12764:17)
+      at TypeScriptParserMixin.parseBlockOrModuleBlockBody (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13333:61)
+      at TypeScriptParserMixin.parseBlockBody (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13326:10)
+      at TypeScriptParserMixin.parseBlock (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13314:10)
+      at TypeScriptParserMixin.parseStatementContent (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12875:21)
+      at TypeScriptParserMixin.parseStatementContent (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:9525:18)
+      at TypeScriptParserMixin.parseStatementLike (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12784:17)
+      at TypeScriptParserMixin.parseStatementOrSloppyAnnexBFunctionDeclaration (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12774:17)
+      at TypeScriptParserMixin.parseIfStatement (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13147:28)
+      at TypeScriptParserMixin.parseStatementContent (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12813:21)
+      at TypeScriptParserMixin.parseStatementContent (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:9525:18)
+      at TypeScriptParserMixin.parseStatementLike (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12784:17)
+      at TypeScriptParserMixin.parseModuleItem (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12761:17)
+      at TypeScriptParserMixin.parseBlockOrModuleBlockBody (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13333:36)
+      at TypeScriptParserMixin.parseBlockBody (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13326:10)
+      at TypeScriptParserMixin.parseProgram (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12639:10)
+      at TypeScriptParserMixin.parseTopLevel (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12629:25)
+      at TypeScriptParserMixin.parse (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:14505:25)
+      at TypeScriptParserMixin.parse (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:10143:18)
+      at parse (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:14539:38)
+      at parser (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\core\lib\parser\index.js:41:34)
+      at parser.next (<anonymous>)
+      at normalizeFile (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\core\lib\transformation\normalize-file.js:51:37)
+      at normalizeFile.next (<anonymous>)
+      at run (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\core\lib\transformation\index.js:22:50)
+      at run.next (<anonymous>)
+      at transform (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\core\lib\transform.js:22:33)
+      at transform.next (<anonymous>)
+      at step (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:261:32)
+      at C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:273:13
+      at async.call.result.err.err (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:223:11)
+      at C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:189:28
+      at C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\core\lib\gensync-utils\async.js:67:7
+      at C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:113:33
+      at step (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:287:14)
+      at C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:273:13
+      at async.call.result.err.err (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:223:11)
+[2m4:55:44 am[22m [31m[1m[vite][22m[39m [31mInternal server error: C:\Users\Akash\Downloads\Frontend-Grad\src\app\components\StudentDashboard.tsx: 'return' outside of function. (42:2)
+
+[0m [90m 40 |[31m }[33m,[31m [])[33m;[31m
+ [90m 41 |[31m   [36mif[31m (loading) {
+[31m[1m>[22m[31m[90m 42 |[31m   [36mreturn[31m [33m<[31m[33mdiv[31m className[33m=[31m[32m"p-6"[31m[33m>[31m[33mLoading[31m dashboard[33m...[31m[33m<[31m[33m/[31m[33mdiv[31m[33m>[31m[33m;[31m
+ [90m    |[31m   [31m[1m^[22m[31m
+ [90m 43 |[31m }
+ [90m 44 |[31m
+ [90m 45 |[31m [36mif[31m (error) {[0m[39m
+  Plugin: [35mvite:react-babel[39m
+  File: [36mC:/Users/Akash/Downloads/Frontend-Grad/src/app/components/StudentDashboard.tsx[39m:42:2
+[33m  40 |  }, []);
+  41 |    if (loading) {
+  42 |    return <div className="p-6">Loading dashboard...</div>;
+     |    ^
+  43 |  }
+  44 |  [39m
+      at constructor (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:365:19)
+      at TypeScriptParserMixin.raise (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:6616:19)
+      at TypeScriptParserMixin.parseReturnStatement (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13153:12)
+      at TypeScriptParserMixin.parseStatementContent (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12815:21)
+      at TypeScriptParserMixin.parseStatementContent (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:9525:18)
+      at TypeScriptParserMixin.parseStatementLike (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12784:17)
+      at TypeScriptParserMixin.parseStatementListItem (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12764:17)
+      at TypeScriptParserMixin.parseBlockOrModuleBlockBody (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13333:61)
+      at TypeScriptParserMixin.parseBlockBody (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13326:10)
+      at TypeScriptParserMixin.parseBlock (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13314:10)
+      at TypeScriptParserMixin.parseStatementContent (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12875:21)
+      at TypeScriptParserMixin.parseStatementContent (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:9525:18)
+      at TypeScriptParserMixin.parseStatementLike (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12784:17)
+      at TypeScriptParserMixin.parseStatementOrSloppyAnnexBFunctionDeclaration (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12774:17)
+      at TypeScriptParserMixin.parseIfStatement (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13147:28)
+      at TypeScriptParserMixin.parseStatementContent (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12813:21)
+      at TypeScriptParserMixin.parseStatementContent (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:9525:18)
+      at TypeScriptParserMixin.parseStatementLike (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12784:17)
+      at TypeScriptParserMixin.parseModuleItem (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12761:17)
+      at TypeScriptParserMixin.parseBlockOrModuleBlockBody (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13333:36)
+      at TypeScriptParserMixin.parseBlockBody (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13326:10)
+      at TypeScriptParserMixin.parseProgram (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12639:10)
+      at TypeScriptParserMixin.parseTopLevel (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12629:25)
+      at TypeScriptParserMixin.parse (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:14505:25)
+      at TypeScriptParserMixin.parse (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:10143:18)
+      at parse (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:14539:38)
+      at parser (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\core\lib\parser\index.js:41:34)
+      at parser.next (<anonymous>)
+      at normalizeFile (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\core\lib\transformation\normalize-file.js:51:37)
+      at normalizeFile.next (<anonymous>)
+      at run (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\core\lib\transformation\index.js:22:50)
+      at run.next (<anonymous>)
+      at transform (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\core\lib\transform.js:22:33)
+      at transform.next (<anonymous>)
+      at step (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:261:32)
+      at C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:273:13
+      at async.call.result.err.err (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:223:11)
+      at C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:189:28
+      at C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\core\lib\gensync-utils\async.js:67:7
+      at C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:113:33
+      at step (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:287:14)
+      at C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:273:13
+      at async.call.result.err.err (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:223:11)
+[2m4:55:48 am[22m [31m[1m[vite][22m[39m [31mInternal server error: C:\Users\Akash\Downloads\Frontend-Grad\src\app\components\StudentDashboard.tsx: 'return' outside of function. (42:2)
+
+[0m [90m 40 |[31m }[33m,[31m [])[33m;[31m
+ [90m 41 |[31m   [36mif[31m (loading) {
+[31m[1m>[22m[31m[90m 42 |[31m   [36mreturn[31m [33m<[31m[33mdiv[31m className[33m=[31m[32m"p-6"[31m[33m>[31m[33mLoading[31m dashboard[33m...[31m[33m<[31m[33m/[31m[33mdiv[31m[33m>[31m[33m;[31m
+ [90m    |[31m   [31m[1m^[22m[31m
+ [90m 43 |[31m }
+ [90m 44 |[31m
+ [90m 45 |[31m [36mif[31m (error) {[0m[39m
+  Plugin: [35mvite:react-babel[39m
+  File: [36mC:/Users/Akash/Downloads/Frontend-Grad/src/app/components/StudentDashboard.tsx[39m:42:2
+[33m  40 |  }, []);
+  41 |    if (loading) {
+  42 |    return <div className="p-6">Loading dashboard...</div>;
+     |    ^
+  43 |  }
+  44 |  [39m
+      at constructor (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:365:19)
+      at TypeScriptParserMixin.raise (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:6616:19)
+      at TypeScriptParserMixin.parseReturnStatement (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13153:12)
+      at TypeScriptParserMixin.parseStatementContent (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12815:21)
+      at TypeScriptParserMixin.parseStatementContent (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:9525:18)
+      at TypeScriptParserMixin.parseStatementLike (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12784:17)
+      at TypeScriptParserMixin.parseStatementListItem (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12764:17)
+      at TypeScriptParserMixin.parseBlockOrModuleBlockBody (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13333:61)
+      at TypeScriptParserMixin.parseBlockBody (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13326:10)
+      at TypeScriptParserMixin.parseBlock (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13314:10)
+      at TypeScriptParserMixin.parseStatementContent (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12875:21)
+      at TypeScriptParserMixin.parseStatementContent (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:9525:18)
+      at TypeScriptParserMixin.parseStatementLike (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12784:17)
+      at TypeScriptParserMixin.parseStatementOrSloppyAnnexBFunctionDeclaration (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12774:17)
+      at TypeScriptParserMixin.parseIfStatement (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13147:28)
+      at TypeScriptParserMixin.parseStatementContent (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12813:21)
+      at TypeScriptParserMixin.parseStatementContent (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:9525:18)
+      at TypeScriptParserMixin.parseStatementLike (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12784:17)
+      at TypeScriptParserMixin.parseModuleItem (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12761:17)
+      at TypeScriptParserMixin.parseBlockOrModuleBlockBody (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13333:36)
+      at TypeScriptParserMixin.parseBlockBody (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13326:10)
+      at TypeScriptParserMixin.parseProgram (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12639:10)
+      at TypeScriptParserMixin.parseTopLevel (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12629:25)
+      at TypeScriptParserMixin.parse (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:14505:25)
+      at TypeScriptParserMixin.parse (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:10143:18)
+      at parse (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:14539:38)
+      at parser (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\core\lib\parser\index.js:41:34)
+      at parser.next (<anonymous>)
+      at normalizeFile (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\core\lib\transformation\normalize-file.js:51:37)
+      at normalizeFile.next (<anonymous>)
+      at run (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\core\lib\transformation\index.js:22:50)
+      at run.next (<anonymous>)
+      at transform (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\core\lib\transform.js:22:33)
+      at transform.next (<anonymous>)
+      at step (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:261:32)
+      at C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:273:13
+      at async.call.result.err.err (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:223:11)
+      at C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:189:28
+      at C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\core\lib\gensync-utils\async.js:67:7
+      at C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:113:33
+      at step (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:287:14)
+      at C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:273:13
+      at async.call.result.err.err (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:223:11)
+[2m4:56:06 am[22m [31m[1m[vite][22m[39m [31mInternal server error: C:\Users\Akash\Downloads\Frontend-Grad\src\app\components\StudentDashboard.tsx: 'return' outside of function. (42:2)
+
+[0m [90m 40 |[31m }[33m,[31m [])[33m;[31m
+ [90m 41 |[31m   [36mif[31m (loading) {
+[31m[1m>[22m[31m[90m 42 |[31m   [36mreturn[31m [33m<[31m[33mdiv[31m className[33m=[31m[32m"p-6"[31m[33m>[31m[33mLoading[31m dashboard[33m...[31m[33m<[31m[33m/[31m[33mdiv[31m[33m>[31m[33m;[31m
+ [90m    |[31m   [31m[1m^[22m[31m
+ [90m 43 |[31m }
+ [90m 44 |[31m
+ [90m 45 |[31m [36mif[31m (error) {[0m[39m
+  Plugin: [35mvite:react-babel[39m
+  File: [36mC:/Users/Akash/Downloads/Frontend-Grad/src/app/components/StudentDashboard.tsx[39m:42:2
+[33m  40 |  }, []);
+  41 |    if (loading) {
+  42 |    return <div className="p-6">Loading dashboard...</div>;
+     |    ^
+  43 |  }
+  44 |  [39m
+      at constructor (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:365:19)
+      at TypeScriptParserMixin.raise (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:6616:19)
+      at TypeScriptParserMixin.parseReturnStatement (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13153:12)
+      at TypeScriptParserMixin.parseStatementContent (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12815:21)
+      at TypeScriptParserMixin.parseStatementContent (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:9525:18)
+      at TypeScriptParserMixin.parseStatementLike (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12784:17)
+      at TypeScriptParserMixin.parseStatementListItem (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12764:17)
+      at TypeScriptParserMixin.parseBlockOrModuleBlockBody (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13333:61)
+      at TypeScriptParserMixin.parseBlockBody (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13326:10)
+      at TypeScriptParserMixin.parseBlock (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13314:10)
+      at TypeScriptParserMixin.parseStatementContent (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12875:21)
+      at TypeScriptParserMixin.parseStatementContent (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:9525:18)
+      at TypeScriptParserMixin.parseStatementLike (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12784:17)
+      at TypeScriptParserMixin.parseStatementOrSloppyAnnexBFunctionDeclaration (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12774:17)
+      at TypeScriptParserMixin.parseIfStatement (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13147:28)
+      at TypeScriptParserMixin.parseStatementContent (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12813:21)
+      at TypeScriptParserMixin.parseStatementContent (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:9525:18)
+      at TypeScriptParserMixin.parseStatementLike (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12784:17)
+      at TypeScriptParserMixin.parseModuleItem (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12761:17)
+      at TypeScriptParserMixin.parseBlockOrModuleBlockBody (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13333:36)
+      at TypeScriptParserMixin.parseBlockBody (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13326:10)
+      at TypeScriptParserMixin.parseProgram (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12639:10)
+      at TypeScriptParserMixin.parseTopLevel (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12629:25)
+      at TypeScriptParserMixin.parse (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:14505:25)
+      at TypeScriptParserMixin.parse (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:10143:18)
+      at parse (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:14539:38)
+      at parser (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\core\lib\parser\index.js:41:34)
+      at parser.next (<anonymous>)
+      at normalizeFile (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\core\lib\transformation\normalize-file.js:51:37)
+      at normalizeFile.next (<anonymous>)
+      at run (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\core\lib\transformation\index.js:22:50)
+      at run.next (<anonymous>)
+      at transform (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\core\lib\transform.js:22:33)
+      at transform.next (<anonymous>)
+      at step (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:261:32)
+      at C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:273:13
+      at async.call.result.err.err (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:223:11)
+      at C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:189:28
+      at C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\core\lib\gensync-utils\async.js:67:7
+      at C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:113:33
+      at step (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:287:14)
+      at C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:273:13
+      at async.call.result.err.err (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:223:11)
+[2m4:56:07 am[22m [31m[1m[vite][22m[39m [31mInternal server error: C:\Users\Akash\Downloads\Frontend-Grad\src\app\components\StudentDashboard.tsx: 'return' outside of function. (42:2)
+
+[0m [90m 40 |[31m }[33m,[31m [])[33m;[31m
+ [90m 41 |[31m   [36mif[31m (loading) {
+[31m[1m>[22m[31m[90m 42 |[31m   [36mreturn[31m [33m<[31m[33mdiv[31m className[33m=[31m[32m"p-6"[31m[33m>[31m[33mLoading[31m dashboard[33m...[31m[33m<[31m[33m/[31m[33mdiv[31m[33m>[31m[33m;[31m
+ [90m    |[31m   [31m[1m^[22m[31m
+ [90m 43 |[31m }
+ [90m 44 |[31m
+ [90m 45 |[31m [36mif[31m (error) {[0m[39m
+  Plugin: [35mvite:react-babel[39m
+  File: [36mC:/Users/Akash/Downloads/Frontend-Grad/src/app/components/StudentDashboard.tsx[39m:42:2
+[33m  40 |  }, []);
+  41 |    if (loading) {
+  42 |    return <div className="p-6">Loading dashboard...</div>;
+     |    ^
+  43 |  }
+  44 |  [39m
+      at constructor (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:365:19)
+      at TypeScriptParserMixin.raise (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:6616:19)
+      at TypeScriptParserMixin.parseReturnStatement (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13153:12)
+      at TypeScriptParserMixin.parseStatementContent (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12815:21)
+      at TypeScriptParserMixin.parseStatementContent (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:9525:18)
+      at TypeScriptParserMixin.parseStatementLike (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12784:17)
+      at TypeScriptParserMixin.parseStatementListItem (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12764:17)
+      at TypeScriptParserMixin.parseBlockOrModuleBlockBody (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13333:61)
+      at TypeScriptParserMixin.parseBlockBody (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13326:10)
+      at TypeScriptParserMixin.parseBlock (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13314:10)
+      at TypeScriptParserMixin.parseStatementContent (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12875:21)
+      at TypeScriptParserMixin.parseStatementContent (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:9525:18)
+      at TypeScriptParserMixin.parseStatementLike (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12784:17)
+      at TypeScriptParserMixin.parseStatementOrSloppyAnnexBFunctionDeclaration (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12774:17)
+      at TypeScriptParserMixin.parseIfStatement (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13147:28)
+      at TypeScriptParserMixin.parseStatementContent (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12813:21)
+      at TypeScriptParserMixin.parseStatementContent (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:9525:18)
+      at TypeScriptParserMixin.parseStatementLike (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12784:17)
+      at TypeScriptParserMixin.parseModuleItem (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12761:17)
+      at TypeScriptParserMixin.parseBlockOrModuleBlockBody (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13333:36)
+      at TypeScriptParserMixin.parseBlockBody (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13326:10)
+      at TypeScriptParserMixin.parseProgram (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12639:10)
+      at TypeScriptParserMixin.parseTopLevel (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12629:25)
+      at TypeScriptParserMixin.parse (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:14505:25)
+      at TypeScriptParserMixin.parse (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:10143:18)
+      at parse (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:14539:38)
+      at parser (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\core\lib\parser\index.js:41:34)
+      at parser.next (<anonymous>)
+      at normalizeFile (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\core\lib\transformation\normalize-file.js:51:37)
+      at normalizeFile.next (<anonymous>)
+      at run (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\core\lib\transformation\index.js:22:50)
+      at run.next (<anonymous>)
+      at transform (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\core\lib\transform.js:22:33)
+      at transform.next (<anonymous>)
+      at step (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:261:32)
+      at C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:273:13
+      at async.call.result.err.err (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:223:11)
+      at C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:189:28
+      at C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\core\lib\gensync-utils\async.js:67:7
+      at C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:113:33
+      at step (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:287:14)
+      at C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:273:13
+      at async.call.result.err.err (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:223:11)
+[2m4:57:03 am[22m [31m[1m[vite][22m[39m [31mInternal server error: C:\Users\Akash\Downloads\Frontend-Grad\src\app\components\StudentDashboard.tsx: 'return' outside of function. (42:2)
+
+[0m [90m 40 |[31m }[33m,[31m [])[33m;[31m
+ [90m 41 |[31m   [36mif[31m (loading) {
+[31m[1m>[22m[31m[90m 42 |[31m   [36mreturn[31m [33m<[31m[33mdiv[31m className[33m=[31m[32m"p-6"[31m[33m>[31m[33mLoading[31m dashboard[33m...[31m[33m<[31m[33m/[31m[33mdiv[31m[33m>[31m[33m;[31m
+ [90m    |[31m   [31m[1m^[22m[31m
+ [90m 43 |[31m }
+ [90m 44 |[31m
+ [90m 45 |[31m [36mif[31m (error) {[0m[39m
+  Plugin: [35mvite:react-babel[39m
+  File: [36mC:/Users/Akash/Downloads/Frontend-Grad/src/app/components/StudentDashboard.tsx[39m:42:2
+[33m  40 |  }, []);
+  41 |    if (loading) {
+  42 |    return <div className="p-6">Loading dashboard...</div>;
+     |    ^
+  43 |  }
+  44 |  [39m
+      at constructor (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:365:19)
+      at TypeScriptParserMixin.raise (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:6616:19)
+      at TypeScriptParserMixin.parseReturnStatement (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13153:12)
+      at TypeScriptParserMixin.parseStatementContent (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12815:21)
+      at TypeScriptParserMixin.parseStatementContent (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:9525:18)
+      at TypeScriptParserMixin.parseStatementLike (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12784:17)
+      at TypeScriptParserMixin.parseStatementListItem (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12764:17)
+      at TypeScriptParserMixin.parseBlockOrModuleBlockBody (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13333:61)
+      at TypeScriptParserMixin.parseBlockBody (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13326:10)
+      at TypeScriptParserMixin.parseBlock (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13314:10)
+      at TypeScriptParserMixin.parseStatementContent (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12875:21)
+      at TypeScriptParserMixin.parseStatementContent (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:9525:18)
+      at TypeScriptParserMixin.parseStatementLike (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12784:17)
+      at TypeScriptParserMixin.parseStatementOrSloppyAnnexBFunctionDeclaration (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12774:17)
+      at TypeScriptParserMixin.parseIfStatement (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13147:28)
+      at TypeScriptParserMixin.parseStatementContent (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12813:21)
+      at TypeScriptParserMixin.parseStatementContent (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:9525:18)
+      at TypeScriptParserMixin.parseStatementLike (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12784:17)
+      at TypeScriptParserMixin.parseModuleItem (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12761:17)
+      at TypeScriptParserMixin.parseBlockOrModuleBlockBody (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13333:36)
+      at TypeScriptParserMixin.parseBlockBody (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13326:10)
+      at TypeScriptParserMixin.parseProgram (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12639:10)
+      at TypeScriptParserMixin.parseTopLevel (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12629:25)
+      at TypeScriptParserMixin.parse (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:14505:25)
+      at TypeScriptParserMixin.parse (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:10143:18)
+      at parse (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:14539:38)
+      at parser (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\core\lib\parser\index.js:41:34)
+      at parser.next (<anonymous>)
+      at normalizeFile (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\core\lib\transformation\normalize-file.js:51:37)
+      at normalizeFile.next (<anonymous>)
+      at run (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\core\lib\transformation\index.js:22:50)
+      at run.next (<anonymous>)
+      at transform (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\core\lib\transform.js:22:33)
+      at transform.next (<anonymous>)
+      at step (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:261:32)
+      at C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:273:13
+      at async.call.result.err.err (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:223:11)
+      at C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:189:28
+      at C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\core\lib\gensync-utils\async.js:67:7
+      at C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:113:33
+      at step (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:287:14)
+      at C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:273:13
+      at async.call.result.err.err (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:223:11)
+[2m4:58:43 am[22m [31m[1m[vite][22m[39m [31mInternal server error: C:\Users\Akash\Downloads\Frontend-Grad\src\app\components\StudentDashboard.tsx: 'return' outside of function. (42:2)
+
+[0m [90m 40 |[31m }[33m,[31m [])[33m;[31m
+ [90m 41 |[31m   [36mif[31m (loading) {
+[31m[1m>[22m[31m[90m 42 |[31m   [36mreturn[31m [33m<[31m[33mdiv[31m className[33m=[31m[32m"p-6"[31m[33m>[31m[33mLoading[31m dashboard[33m...[31m[33m<[31m[33m/[31m[33mdiv[31m[33m>[31m[33m;[31m
+ [90m    |[31m   [31m[1m^[22m[31m
+ [90m 43 |[31m }
+ [90m 44 |[31m
+ [90m 45 |[31m [36mif[31m (error) {[0m[39m
+  Plugin: [35mvite:react-babel[39m
+  File: [36mC:/Users/Akash/Downloads/Frontend-Grad/src/app/components/StudentDashboard.tsx[39m:42:2
+[33m  40 |  }, []);
+  41 |    if (loading) {
+  42 |    return <div className="p-6">Loading dashboard...</div>;
+     |    ^
+  43 |  }
+  44 |  [39m
+      at constructor (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:365:19)
+      at TypeScriptParserMixin.raise (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:6616:19)
+      at TypeScriptParserMixin.parseReturnStatement (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13153:12)
+      at TypeScriptParserMixin.parseStatementContent (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12815:21)
+      at TypeScriptParserMixin.parseStatementContent (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:9525:18)
+      at TypeScriptParserMixin.parseStatementLike (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12784:17)
+      at TypeScriptParserMixin.parseStatementListItem (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12764:17)
+      at TypeScriptParserMixin.parseBlockOrModuleBlockBody (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13333:61)
+      at TypeScriptParserMixin.parseBlockBody (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13326:10)
+      at TypeScriptParserMixin.parseBlock (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13314:10)
+      at TypeScriptParserMixin.parseStatementContent (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12875:21)
+      at TypeScriptParserMixin.parseStatementContent (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:9525:18)
+      at TypeScriptParserMixin.parseStatementLike (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12784:17)
+      at TypeScriptParserMixin.parseStatementOrSloppyAnnexBFunctionDeclaration (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12774:17)
+      at TypeScriptParserMixin.parseIfStatement (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13147:28)
+      at TypeScriptParserMixin.parseStatementContent (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12813:21)
+      at TypeScriptParserMixin.parseStatementContent (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:9525:18)
+      at TypeScriptParserMixin.parseStatementLike (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12784:17)
+      at TypeScriptParserMixin.parseModuleItem (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12761:17)
+      at TypeScriptParserMixin.parseBlockOrModuleBlockBody (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13333:36)
+      at TypeScriptParserMixin.parseBlockBody (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13326:10)
+      at TypeScriptParserMixin.parseProgram (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12639:10)
+      at TypeScriptParserMixin.parseTopLevel (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12629:25)
+      at TypeScriptParserMixin.parse (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:14505:25)
+      at TypeScriptParserMixin.parse (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:10143:18)
+      at parse (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:14539:38)
+      at parser (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\core\lib\parser\index.js:41:34)
+      at parser.next (<anonymous>)
+      at normalizeFile (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\core\lib\transformation\normalize-file.js:51:37)
+      at normalizeFile.next (<anonymous>)
+      at run (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\core\lib\transformation\index.js:22:50)
+      at run.next (<anonymous>)
+      at transform (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\core\lib\transform.js:22:33)
+      at transform.next (<anonymous>)
+      at step (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:261:32)
+      at C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:273:13
+      at async.call.result.err.err (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:223:11)
+      at C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:189:28
+      at C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\core\lib\gensync-utils\async.js:67:7
+      at C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:113:33
+      at step (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:287:14)
+      at C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:273:13
+      at async.call.result.err.err (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:223:11)
+[2m4:58:44 am[22m [31m[1m[vite][22m[39m [31mInternal server error: C:\Users\Akash\Downloads\Frontend-Grad\src\app\components\StudentDashboard.tsx: 'return' outside of function. (42:2)
+
+[0m [90m 40 |[31m }[33m,[31m [])[33m;[31m
+ [90m 41 |[31m   [36mif[31m (loading) {
+[31m[1m>[22m[31m[90m 42 |[31m   [36mreturn[31m [33m<[31m[33mdiv[31m className[33m=[31m[32m"p-6"[31m[33m>[31m[33mLoading[31m dashboard[33m...[31m[33m<[31m[33m/[31m[33mdiv[31m[33m>[31m[33m;[31m
+ [90m    |[31m   [31m[1m^[22m[31m
+ [90m 43 |[31m }
+ [90m 44 |[31m
+ [90m 45 |[31m [36mif[31m (error) {[0m[39m
+  Plugin: [35mvite:react-babel[39m
+  File: [36mC:/Users/Akash/Downloads/Frontend-Grad/src/app/components/StudentDashboard.tsx[39m:42:2
+[33m  40 |  }, []);
+  41 |    if (loading) {
+  42 |    return <div className="p-6">Loading dashboard...</div>;
+     |    ^
+  43 |  }
+  44 |  [39m
+      at constructor (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:365:19)
+      at TypeScriptParserMixin.raise (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:6616:19)
+      at TypeScriptParserMixin.parseReturnStatement (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13153:12)
+      at TypeScriptParserMixin.parseStatementContent (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12815:21)
+      at TypeScriptParserMixin.parseStatementContent (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:9525:18)
+      at TypeScriptParserMixin.parseStatementLike (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12784:17)
+      at TypeScriptParserMixin.parseStatementListItem (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12764:17)
+      at TypeScriptParserMixin.parseBlockOrModuleBlockBody (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13333:61)
+      at TypeScriptParserMixin.parseBlockBody (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13326:10)
+      at TypeScriptParserMixin.parseBlock (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13314:10)
+      at TypeScriptParserMixin.parseStatementContent (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12875:21)
+      at TypeScriptParserMixin.parseStatementContent (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:9525:18)
+      at TypeScriptParserMixin.parseStatementLike (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12784:17)
+      at TypeScriptParserMixin.parseStatementOrSloppyAnnexBFunctionDeclaration (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12774:17)
+      at TypeScriptParserMixin.parseIfStatement (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13147:28)
+      at TypeScriptParserMixin.parseStatementContent (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12813:21)
+      at TypeScriptParserMixin.parseStatementContent (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:9525:18)
+      at TypeScriptParserMixin.parseStatementLike (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12784:17)
+      at TypeScriptParserMixin.parseModuleItem (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12761:17)
+      at TypeScriptParserMixin.parseBlockOrModuleBlockBody (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13333:36)
+      at TypeScriptParserMixin.parseBlockBody (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13326:10)
+      at TypeScriptParserMixin.parseProgram (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12639:10)
+      at TypeScriptParserMixin.parseTopLevel (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12629:25)
+      at TypeScriptParserMixin.parse (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:14505:25)
+      at TypeScriptParserMixin.parse (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:10143:18)
+      at parse (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:14539:38)
+      at parser (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\core\lib\parser\index.js:41:34)
+      at parser.next (<anonymous>)
+      at normalizeFile (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\core\lib\transformation\normalize-file.js:51:37)
+      at normalizeFile.next (<anonymous>)
+      at run (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\core\lib\transformation\index.js:22:50)
+      at run.next (<anonymous>)
+      at transform (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\core\lib\transform.js:22:33)
+      at transform.next (<anonymous>)
+      at step (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:261:32)
+      at C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:273:13
+      at async.call.result.err.err (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:223:11)
+      at C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:189:28
+      at C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\core\lib\gensync-utils\async.js:67:7
+      at C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:113:33
+      at step (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:287:14)
+      at C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:273:13
+      at async.call.result.err.err (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:223:11)
+[2m4:58:52 am[22m [31m[1m[vite][22m[39m [31mInternal server error: C:\Users\Akash\Downloads\Frontend-Grad\src\app\components\StudentDashboard.tsx: 'return' outside of function. (42:2)
+
+[0m [90m 40 |[31m }[33m,[31m [])[33m;[31m
+ [90m 41 |[31m   [36mif[31m (loading) {
+[31m[1m>[22m[31m[90m 42 |[31m   [36mreturn[31m [33m<[31m[33mdiv[31m className[33m=[31m[32m"p-6"[31m[33m>[31m[33mLoading[31m dashboard[33m...[31m[33m<[31m[33m/[31m[33mdiv[31m[33m>[31m[33m;[31m
+ [90m    |[31m   [31m[1m^[22m[31m
+ [90m 43 |[31m }
+ [90m 44 |[31m
+ [90m 45 |[31m [36mif[31m (error) {[0m[39m
+  Plugin: [35mvite:react-babel[39m
+  File: [36mC:/Users/Akash/Downloads/Frontend-Grad/src/app/components/StudentDashboard.tsx[39m:42:2
+[33m  40 |  }, []);
+  41 |    if (loading) {
+  42 |    return <div className="p-6">Loading dashboard...</div>;
+     |    ^
+  43 |  }
+  44 |  [39m
+      at constructor (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:365:19)
+      at TypeScriptParserMixin.raise (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:6616:19)
+      at TypeScriptParserMixin.parseReturnStatement (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13153:12)
+      at TypeScriptParserMixin.parseStatementContent (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12815:21)
+      at TypeScriptParserMixin.parseStatementContent (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:9525:18)
+      at TypeScriptParserMixin.parseStatementLike (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12784:17)
+      at TypeScriptParserMixin.parseStatementListItem (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12764:17)
+      at TypeScriptParserMixin.parseBlockOrModuleBlockBody (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13333:61)
+      at TypeScriptParserMixin.parseBlockBody (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13326:10)
+      at TypeScriptParserMixin.parseBlock (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13314:10)
+      at TypeScriptParserMixin.parseStatementContent (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12875:21)
+      at TypeScriptParserMixin.parseStatementContent (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:9525:18)
+      at TypeScriptParserMixin.parseStatementLike (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12784:17)
+      at TypeScriptParserMixin.parseStatementOrSloppyAnnexBFunctionDeclaration (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12774:17)
+      at TypeScriptParserMixin.parseIfStatement (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13147:28)
+      at TypeScriptParserMixin.parseStatementContent (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12813:21)
+      at TypeScriptParserMixin.parseStatementContent (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:9525:18)
+      at TypeScriptParserMixin.parseStatementLike (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12784:17)
+      at TypeScriptParserMixin.parseModuleItem (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12761:17)
+      at TypeScriptParserMixin.parseBlockOrModuleBlockBody (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13333:36)
+      at TypeScriptParserMixin.parseBlockBody (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13326:10)
+      at TypeScriptParserMixin.parseProgram (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12639:10)
+      at TypeScriptParserMixin.parseTopLevel (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12629:25)
+      at TypeScriptParserMixin.parse (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:14505:25)
+      at TypeScriptParserMixin.parse (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:10143:18)
+      at parse (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:14539:38)
+      at parser (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\core\lib\parser\index.js:41:34)
+      at parser.next (<anonymous>)
+      at normalizeFile (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\core\lib\transformation\normalize-file.js:51:37)
+      at normalizeFile.next (<anonymous>)
+      at run (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\core\lib\transformation\index.js:22:50)
+      at run.next (<anonymous>)
+      at transform (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\core\lib\transform.js:22:33)
+      at transform.next (<anonymous>)
+      at step (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:261:32)
+      at C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:273:13
+      at async.call.result.err.err (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:223:11)
+      at C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:189:28
+      at C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\core\lib\gensync-utils\async.js:67:7
+      at C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:113:33
+      at step (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:287:14)
+      at C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:273:13
+      at async.call.result.err.err (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:223:11)
+[2m4:58:55 am[22m [31m[1m[vite][22m[39m [31mInternal server error: C:\Users\Akash\Downloads\Frontend-Grad\src\app\components\StudentDashboard.tsx: 'return' outside of function. (42:2)
+
+[0m [90m 40 |[31m }[33m,[31m [])[33m;[31m
+ [90m 41 |[31m   [36mif[31m (loading) {
+[31m[1m>[22m[31m[90m 42 |[31m   [36mreturn[31m [33m<[31m[33mdiv[31m className[33m=[31m[32m"p-6"[31m[33m>[31m[33mLoading[31m dashboard[33m...[31m[33m<[31m[33m/[31m[33mdiv[31m[33m>[31m[33m;[31m
+ [90m    |[31m   [31m[1m^[22m[31m
+ [90m 43 |[31m }
+ [90m 44 |[31m
+ [90m 45 |[31m [36mif[31m (error) {[0m[39m
+  Plugin: [35mvite:react-babel[39m
+  File: [36mC:/Users/Akash/Downloads/Frontend-Grad/src/app/components/StudentDashboard.tsx[39m:42:2
+[33m  40 |  }, []);
+  41 |    if (loading) {
+  42 |    return <div className="p-6">Loading dashboard...</div>;
+     |    ^
+  43 |  }
+  44 |  [39m
+      at constructor (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:365:19)
+      at TypeScriptParserMixin.raise (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:6616:19)
+      at TypeScriptParserMixin.parseReturnStatement (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13153:12)
+      at TypeScriptParserMixin.parseStatementContent (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12815:21)
+      at TypeScriptParserMixin.parseStatementContent (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:9525:18)
+      at TypeScriptParserMixin.parseStatementLike (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12784:17)
+      at TypeScriptParserMixin.parseStatementListItem (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12764:17)
+      at TypeScriptParserMixin.parseBlockOrModuleBlockBody (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13333:61)
+      at TypeScriptParserMixin.parseBlockBody (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13326:10)
+      at TypeScriptParserMixin.parseBlock (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13314:10)
+      at TypeScriptParserMixin.parseStatementContent (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12875:21)
+      at TypeScriptParserMixin.parseStatementContent (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:9525:18)
+      at TypeScriptParserMixin.parseStatementLike (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12784:17)
+      at TypeScriptParserMixin.parseStatementOrSloppyAnnexBFunctionDeclaration (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12774:17)
+      at TypeScriptParserMixin.parseIfStatement (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13147:28)
+      at TypeScriptParserMixin.parseStatementContent (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12813:21)
+      at TypeScriptParserMixin.parseStatementContent (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:9525:18)
+      at TypeScriptParserMixin.parseStatementLike (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12784:17)
+      at TypeScriptParserMixin.parseModuleItem (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12761:17)
+      at TypeScriptParserMixin.parseBlockOrModuleBlockBody (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13333:36)
+      at TypeScriptParserMixin.parseBlockBody (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13326:10)
+      at TypeScriptParserMixin.parseProgram (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12639:10)
+      at TypeScriptParserMixin.parseTopLevel (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12629:25)
+      at TypeScriptParserMixin.parse (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:14505:25)
+      at TypeScriptParserMixin.parse (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:10143:18)
+      at parse (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:14539:38)
+      at parser (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\core\lib\parser\index.js:41:34)
+      at parser.next (<anonymous>)
+      at normalizeFile (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\core\lib\transformation\normalize-file.js:51:37)
+      at normalizeFile.next (<anonymous>)
+      at run (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\core\lib\transformation\index.js:22:50)
+      at run.next (<anonymous>)
+      at transform (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\core\lib\transform.js:22:33)
+      at transform.next (<anonymous>)
+      at step (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:261:32)
+      at C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:273:13
+      at async.call.result.err.err (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:223:11)
+      at C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:189:28
+      at C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\core\lib\gensync-utils\async.js:67:7
+      at C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:113:33
+      at step (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:287:14)
+      at C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:273:13
+      at async.call.result.err.err (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:223:11)
+[2m4:59:15 am[22m [31m[1m[vite][22m[39m [31mInternal server error: C:\Users\Akash\Downloads\Frontend-Grad\src\app\components\StudentDashboard.tsx: 'return' outside of function. (42:2)
+
+[0m [90m 40 |[31m }[33m,[31m [])[33m;[31m
+ [90m 41 |[31m   [36mif[31m (loading) {
+[31m[1m>[22m[31m[90m 42 |[31m   [36mreturn[31m [33m<[31m[33mdiv[31m className[33m=[31m[32m"p-6"[31m[33m>[31m[33mLoading[31m dashboard[33m...[31m[33m<[31m[33m/[31m[33mdiv[31m[33m>[31m[33m;[31m
+ [90m    |[31m   [31m[1m^[22m[31m
+ [90m 43 |[31m }
+ [90m 44 |[31m
+ [90m 45 |[31m [36mif[31m (error) {[0m[39m
+  Plugin: [35mvite:react-babel[39m
+  File: [36mC:/Users/Akash/Downloads/Frontend-Grad/src/app/components/StudentDashboard.tsx[39m:42:2
+[33m  40 |  }, []);
+  41 |    if (loading) {
+  42 |    return <div className="p-6">Loading dashboard...</div>;
+     |    ^
+  43 |  }
+  44 |  [39m
+      at constructor (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:365:19)
+      at TypeScriptParserMixin.raise (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:6616:19)
+      at TypeScriptParserMixin.parseReturnStatement (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13153:12)
+      at TypeScriptParserMixin.parseStatementContent (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12815:21)
+      at TypeScriptParserMixin.parseStatementContent (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:9525:18)
+      at TypeScriptParserMixin.parseStatementLike (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12784:17)
+      at TypeScriptParserMixin.parseStatementListItem (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12764:17)
+      at TypeScriptParserMixin.parseBlockOrModuleBlockBody (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13333:61)
+      at TypeScriptParserMixin.parseBlockBody (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13326:10)
+      at TypeScriptParserMixin.parseBlock (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13314:10)
+      at TypeScriptParserMixin.parseStatementContent (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12875:21)
+      at TypeScriptParserMixin.parseStatementContent (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:9525:18)
+      at TypeScriptParserMixin.parseStatementLike (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12784:17)
+      at TypeScriptParserMixin.parseStatementOrSloppyAnnexBFunctionDeclaration (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12774:17)
+      at TypeScriptParserMixin.parseIfStatement (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13147:28)
+      at TypeScriptParserMixin.parseStatementContent (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12813:21)
+      at TypeScriptParserMixin.parseStatementContent (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:9525:18)
+      at TypeScriptParserMixin.parseStatementLike (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12784:17)
+      at TypeScriptParserMixin.parseModuleItem (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12761:17)
+      at TypeScriptParserMixin.parseBlockOrModuleBlockBody (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13333:36)
+      at TypeScriptParserMixin.parseBlockBody (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13326:10)
+      at TypeScriptParserMixin.parseProgram (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12639:10)
+      at TypeScriptParserMixin.parseTopLevel (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12629:25)
+      at TypeScriptParserMixin.parse (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:14505:25)
+      at TypeScriptParserMixin.parse (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:10143:18)
+      at parse (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:14539:38)
+      at parser (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\core\lib\parser\index.js:41:34)
+      at parser.next (<anonymous>)
+      at normalizeFile (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\core\lib\transformation\normalize-file.js:51:37)
+      at normalizeFile.next (<anonymous>)
+      at run (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\core\lib\transformation\index.js:22:50)
+      at run.next (<anonymous>)
+      at transform (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\core\lib\transform.js:22:33)
+      at transform.next (<anonymous>)
+      at step (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:261:32)
+      at C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:273:13
+      at async.call.result.err.err (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:223:11)
+      at C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:189:28
+      at C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\core\lib\gensync-utils\async.js:67:7
+      at C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:113:33
+      at step (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:287:14)
+      at C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:273:13
+      at async.call.result.err.err (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:223:11)
+[2m4:59:34 am[22m [31m[1m[vite][22m[39m [31mInternal server error: C:\Users\Akash\Downloads\Frontend-Grad\src\app\components\StudentDashboard.tsx: 'return' outside of function. (42:2)
+
+[0m [90m 40 |[31m }[33m,[31m [])[33m;[31m
+ [90m 41 |[31m   [36mif[31m (loading) {
+[31m[1m>[22m[31m[90m 42 |[31m   [36mreturn[31m [33m<[31m[33mdiv[31m className[33m=[31m[32m"p-6"[31m[33m>[31m[33mLoading[31m dashboard[33m...[31m[33m<[31m[33m/[31m[33mdiv[31m[33m>[31m[33m;[31m
+ [90m    |[31m   [31m[1m^[22m[31m
+ [90m 43 |[31m }
+ [90m 44 |[31m
+ [90m 45 |[31m [36mif[31m (error) {[0m[39m
+  Plugin: [35mvite:react-babel[39m
+  File: [36mC:/Users/Akash/Downloads/Frontend-Grad/src/app/components/StudentDashboard.tsx[39m:42:2
+[33m  40 |  }, []);
+  41 |    if (loading) {
+  42 |    return <div className="p-6">Loading dashboard...</div>;
+     |    ^
+  43 |  }
+  44 |  [39m
+      at constructor (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:365:19)
+      at TypeScriptParserMixin.raise (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:6616:19)
+      at TypeScriptParserMixin.parseReturnStatement (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13153:12)
+      at TypeScriptParserMixin.parseStatementContent (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12815:21)
+      at TypeScriptParserMixin.parseStatementContent (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:9525:18)
+      at TypeScriptParserMixin.parseStatementLike (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12784:17)
+      at TypeScriptParserMixin.parseStatementListItem (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12764:17)
+      at TypeScriptParserMixin.parseBlockOrModuleBlockBody (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13333:61)
+      at TypeScriptParserMixin.parseBlockBody (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13326:10)
+      at TypeScriptParserMixin.parseBlock (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13314:10)
+      at TypeScriptParserMixin.parseStatementContent (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12875:21)
+      at TypeScriptParserMixin.parseStatementContent (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:9525:18)
+      at TypeScriptParserMixin.parseStatementLike (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12784:17)
+      at TypeScriptParserMixin.parseStatementOrSloppyAnnexBFunctionDeclaration (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12774:17)
+      at TypeScriptParserMixin.parseIfStatement (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13147:28)
+      at TypeScriptParserMixin.parseStatementContent (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12813:21)
+      at TypeScriptParserMixin.parseStatementContent (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:9525:18)
+      at TypeScriptParserMixin.parseStatementLike (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12784:17)
+      at TypeScriptParserMixin.parseModuleItem (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12761:17)
+      at TypeScriptParserMixin.parseBlockOrModuleBlockBody (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13333:36)
+      at TypeScriptParserMixin.parseBlockBody (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13326:10)
+      at TypeScriptParserMixin.parseProgram (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12639:10)
+      at TypeScriptParserMixin.parseTopLevel (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12629:25)
+      at TypeScriptParserMixin.parse (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:14505:25)
+      at TypeScriptParserMixin.parse (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:10143:18)
+      at parse (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:14539:38)
+      at parser (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\core\lib\parser\index.js:41:34)
+      at parser.next (<anonymous>)
+      at normalizeFile (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\core\lib\transformation\normalize-file.js:51:37)
+      at normalizeFile.next (<anonymous>)
+      at run (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\core\lib\transformation\index.js:22:50)
+      at run.next (<anonymous>)
+      at transform (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\core\lib\transform.js:22:33)
+      at transform.next (<anonymous>)
+      at step (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:261:32)
+      at C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:273:13
+      at async.call.result.err.err (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:223:11)
+      at C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:189:28
+      at C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\core\lib\gensync-utils\async.js:67:7
+      at C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:113:33
+      at step (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:287:14)
+      at C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:273:13
+      at async.call.result.err.err (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:223:11)
+[2m5:00:17 am[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m Pre-transform error: C:\Users\Akash\Downloads\Frontend-Grad\src\app\components\StudentDashboard.tsx: 'return' outside of function. (42:2)
+
+[0m [90m 40 |[39m }[33m,[39m [])[33m;[39m
+ [90m 41 |[39m   [36mif[39m (loading) {
+[31m[1m>[22m[39m[90m 42 |[39m   [36mreturn[39m [33m<[39m[33mdiv[39m className[33m=[39m[32m"p-6"[39m[33m>[39m[33mLoading[39m dashboard[33m...[39m[33m<[39m[33m/[39m[33mdiv[39m[33m>[39m[33m;[39m
+ [90m    |[39m   [31m[1m^[22m[39m
+ [90m 43 |[39m }
+ [90m 44 |[39m
+ [90m 45 |[39m [36mif[39m (error) {[0m
+  Plugin: [35mvite:react-babel[39m
+  File: [36mC:/Users/Akash/Downloads/Frontend-Grad/src/app/components/StudentDashboard.tsx[39m:42:2
+[33m  40 |  }, []);
+  41 |    if (loading) {
+  42 |    return <div className="p-6">Loading dashboard...</div>;
+     |    ^
+  43 |  }
+  44 |  [39m
+[2m5:00:17 am[22m [31m[1m[vite][22m[39m [31mInternal server error: C:\Users\Akash\Downloads\Frontend-Grad\src\app\components\StudentDashboard.tsx: 'return' outside of function. (42:2)
+
+[0m [90m 40 |[31m }[33m,[31m [])[33m;[31m
+ [90m 41 |[31m   [36mif[31m (loading) {
+[31m[1m>[22m[31m[90m 42 |[31m   [36mreturn[31m [33m<[31m[33mdiv[31m className[33m=[31m[32m"p-6"[31m[33m>[31m[33mLoading[31m dashboard[33m...[31m[33m<[31m[33m/[31m[33mdiv[31m[33m>[31m[33m;[31m
+ [90m    |[31m   [31m[1m^[22m[31m
+ [90m 43 |[31m }
+ [90m 44 |[31m
+ [90m 45 |[31m [36mif[31m (error) {[0m[39m
+  Plugin: [35mvite:react-babel[39m
+  File: [36mC:/Users/Akash/Downloads/Frontend-Grad/src/app/components/StudentDashboard.tsx[39m:42:2
+[33m  40 |  }, []);
+  41 |    if (loading) {
+  42 |    return <div className="p-6">Loading dashboard...</div>;
+     |    ^
+  43 |  }
+  44 |  [39m
+      at constructor (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:365:19)
+      at TypeScriptParserMixin.raise (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:6616:19)
+      at TypeScriptParserMixin.parseReturnStatement (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13153:12)
+      at TypeScriptParserMixin.parseStatementContent (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12815:21)
+      at TypeScriptParserMixin.parseStatementContent (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:9525:18)
+      at TypeScriptParserMixin.parseStatementLike (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12784:17)
+      at TypeScriptParserMixin.parseStatementListItem (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12764:17)
+      at TypeScriptParserMixin.parseBlockOrModuleBlockBody (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13333:61)
+      at TypeScriptParserMixin.parseBlockBody (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13326:10)
+      at TypeScriptParserMixin.parseBlock (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13314:10)
+      at TypeScriptParserMixin.parseStatementContent (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12875:21)
+      at TypeScriptParserMixin.parseStatementContent (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:9525:18)
+      at TypeScriptParserMixin.parseStatementLike (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12784:17)
+      at TypeScriptParserMixin.parseStatementOrSloppyAnnexBFunctionDeclaration (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12774:17)
+      at TypeScriptParserMixin.parseIfStatement (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13147:28)
+      at TypeScriptParserMixin.parseStatementContent (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12813:21)
+      at TypeScriptParserMixin.parseStatementContent (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:9525:18)
+      at TypeScriptParserMixin.parseStatementLike (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12784:17)
+      at TypeScriptParserMixin.parseModuleItem (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12761:17)
+      at TypeScriptParserMixin.parseBlockOrModuleBlockBody (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13333:36)
+      at TypeScriptParserMixin.parseBlockBody (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13326:10)
+      at TypeScriptParserMixin.parseProgram (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12639:10)
+      at TypeScriptParserMixin.parseTopLevel (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12629:25)
+      at TypeScriptParserMixin.parse (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:14505:25)
+      at TypeScriptParserMixin.parse (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:10143:18)
+      at parse (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:14539:38)
+      at parser (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\core\lib\parser\index.js:41:34)
+      at parser.next (<anonymous>)
+      at normalizeFile (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\core\lib\transformation\normalize-file.js:51:37)
+      at normalizeFile.next (<anonymous>)
+      at run (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\core\lib\transformation\index.js:22:50)
+      at run.next (<anonymous>)
+      at transform (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\core\lib\transform.js:22:33)
+      at transform.next (<anonymous>)
+      at step (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:261:32)
+      at C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:273:13
+      at async.call.result.err.err (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:223:11)
+      at C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:189:28
+      at C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\core\lib\gensync-utils\async.js:67:7
+      at C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:113:33
+      at step (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:287:14)
+      at C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:273:13
+      at async.call.result.err.err (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:223:11)
+[2m5:17:03 am[22m [31m[1m[vite][22m[39m [31mInternal server error: C:\Users\Akash\Downloads\Frontend-Grad\src\app\components\DirectoryPage.tsx: Identifier 'useState' has already been declared. (3:9)
+
+[0m [90m 1 |[31m [36mimport[31m { useEffect[33m,[31m useState } [36mfrom[31m [32m"react"[31m[33m;[31m
+ [90m 2 |[31m [36mimport[31m { getAlumni } [36mfrom[31m [32m"../../lib/alumniApi"[31m[33m;[31m
+[31m[1m>[22m[31m[90m 3 |[31m [36mimport[31m { useState } [36mfrom[31m [32m"react"[31m[33m;[31m
+ [90m   |[31m          [31m[1m^[22m[31m
+ [90m 4 |[31m [36mimport[31m { [33mUsers[31m[33m,[31m [33mSearch[31m[33m,[31m [33mMapPin[31m[33m,[31m [33mBuilding[31m[33m,[31m [33mAward[31m[33m,[31m [33mEye[31m } [36mfrom[31m [32m"lucide-react"[31m[33m;[31m
+ [90m 5 |[31m [36mimport[31m type { [33mPage[31m } [36mfrom[31m [32m"../types"[31m[33m;[31m
+ [90m 6 |[31m [36mimport[31m { alumni } [36mfrom[31m [32m"../data"[31m[33m;[31m[0m[39m
+  Plugin: [35mvite:react-babel[39m
+  File: [36mC:/Users/Akash/Downloads/Frontend-Grad/src/app/components/DirectoryPage.tsx[39m:3:9
+[33m  1  |  import { useEffect, useState } from "react";
+  2  |  import { getAlumni } from "../../lib/alumniApi";
+  3  |  import { useState } from "react";
+     |           ^
+  4  |  import { Users, Search, MapPin, Building, Award, Eye } from "lucide-react";
+  5  |  import type { Page } from "../types";[39m
+      at constructor (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:365:19)
+      at TypeScriptParserMixin.raise (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:6616:19)
+      at TypeScriptScopeHandler.declareName (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:4878:21)
+      at TypeScriptParserMixin.declareNameFromIdentifier (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:7584:16)
+      at TypeScriptParserMixin.checkIdentifier (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:7580:12)
+      at TypeScriptParserMixin.checkLVal (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:7517:12)
+      at TypeScriptParserMixin.finishImportSpecifier (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:14283:10)
+      at TypeScriptParserMixin.parseImportSpecifier (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:14436:17)
+      at TypeScriptParserMixin.parseImportSpecifier (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:10165:18)
+      at TypeScriptParserMixin.parseNamedImportSpecifiers (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:14415:36)
+      at TypeScriptParserMixin.parseImportSpecifiersAndAfter (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:14259:37)
+      at TypeScriptParserMixin.parseImport (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:14252:17)
+      at TypeScriptParserMixin.parseImport (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:9370:26)
+      at TypeScriptParserMixin.parseStatementContent (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12893:27)
+      at TypeScriptParserMixin.parseStatementContent (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:9525:18)
+      at TypeScriptParserMixin.parseStatementLike (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12784:17)
+      at TypeScriptParserMixin.parseModuleItem (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12761:17)
+      at TypeScriptParserMixin.parseBlockOrModuleBlockBody (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13333:36)
+      at TypeScriptParserMixin.parseBlockBody (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13326:10)
+      at TypeScriptParserMixin.parseProgram (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12639:10)
+      at TypeScriptParserMixin.parseTopLevel (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12629:25)
+      at TypeScriptParserMixin.parse (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:14505:25)
+      at TypeScriptParserMixin.parse (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:10143:18)
+      at parse (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:14539:38)
+      at parser (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\core\lib\parser\index.js:41:34)
+      at parser.next (<anonymous>)
+      at normalizeFile (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\core\lib\transformation\normalize-file.js:51:37)
+      at normalizeFile.next (<anonymous>)
+      at run (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\core\lib\transformation\index.js:22:50)
+      at run.next (<anonymous>)
+      at transform (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\core\lib\transform.js:22:33)
+      at transform.next (<anonymous>)
+      at step (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:261:32)
+      at C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:273:13
+      at async.call.result.err.err (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:223:11)
+      at C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:189:28
+      at C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\core\lib\gensync-utils\async.js:67:7
+      at C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:113:33
+      at step (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:287:14)
+      at C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:273:13
+      at async.call.result.err.err (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:223:11)
+[2m5:17:24 am[22m [31m[1m[vite][22m[39m [31mInternal server error: C:\Users\Akash\Downloads\Frontend-Grad\src\app\components\DirectoryPage.tsx: Identifier 'getAlumni' has already been declared. (3:9)
+
+[0m [90m 1 |[31m [36mimport[31m { useEffect[33m,[31m useState } [36mfrom[31m [32m"react"[31m[33m;[31m
+ [90m 2 |[31m [36mimport[31m { getAlumni } [36mfrom[31m [32m"../../lib/alumniApi"[31m[33m;[31m
+[31m[1m>[22m[31m[90m 3 |[31m [36mimport[31m { getAlumni } [36mfrom[31m [32m"../lib/alumniApi"[31m[33m;[31m
+ [90m   |[31m          [31m[1m^[22m[31m
+ [90m 4 |[31m [36mimport[31m { useState } [36mfrom[31m [32m"react"[31m[33m;[31m
+ [90m 5 |[31m [36mimport[31m { [33mUsers[31m[33m,[31m [33mSearch[31m[33m,[31m [33mMapPin[31m[33m,[31m [33mBuilding[31m[33m,[31m [33mAward[31m[33m,[31m [33mEye[31m } [36mfrom[31m [32m"lucide-react"[31m[33m;[31m
+ [90m 6 |[31m [36mimport[31m type { [33mPage[31m } [36mfrom[31m [32m"../types"[31m[33m;[31m[0m[39m
+  Plugin: [35mvite:react-babel[39m
+  File: [36mC:/Users/Akash/Downloads/Frontend-Grad/src/app/components/DirectoryPage.tsx[39m:3:9
+[33m  1  |  import { useEffect, useState } from "react";
+  2  |  import { getAlumni } from "../../lib/alumniApi";
+  3  |  import { getAlumni } from "../lib/alumniApi";
+     |           ^
+  4  |  import { useState } from "react";
+  5  |  import { Users, Search, MapPin, Building, Award, Eye } from "lucide-react";[39m
+      at constructor (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:365:19)
+      at TypeScriptParserMixin.raise (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:6616:19)
+      at TypeScriptScopeHandler.declareName (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:4878:21)
+      at TypeScriptParserMixin.declareNameFromIdentifier (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:7584:16)
+      at TypeScriptParserMixin.checkIdentifier (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:7580:12)
+      at TypeScriptParserMixin.checkLVal (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:7517:12)
+      at TypeScriptParserMixin.finishImportSpecifier (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:14283:10)
+      at TypeScriptParserMixin.parseImportSpecifier (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:14436:17)
+      at TypeScriptParserMixin.parseImportSpecifier (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:10165:18)
+      at TypeScriptParserMixin.parseNamedImportSpecifiers (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:14415:36)
+      at TypeScriptParserMixin.parseImportSpecifiersAndAfter (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:14259:37)
+      at TypeScriptParserMixin.parseImport (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:14252:17)
+      at TypeScriptParserMixin.parseImport (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:9370:26)
+      at TypeScriptParserMixin.parseStatementContent (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12893:27)
+      at TypeScriptParserMixin.parseStatementContent (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:9525:18)
+      at TypeScriptParserMixin.parseStatementLike (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12784:17)
+      at TypeScriptParserMixin.parseModuleItem (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12761:17)
+      at TypeScriptParserMixin.parseBlockOrModuleBlockBody (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13333:36)
+      at TypeScriptParserMixin.parseBlockBody (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13326:10)
+      at TypeScriptParserMixin.parseProgram (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12639:10)
+      at TypeScriptParserMixin.parseTopLevel (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12629:25)
+      at TypeScriptParserMixin.parse (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:14505:25)
+      at TypeScriptParserMixin.parse (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:10143:18)
+      at parse (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:14539:38)
+      at parser (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\core\lib\parser\index.js:41:34)
+      at parser.next (<anonymous>)
+      at normalizeFile (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\core\lib\transformation\normalize-file.js:51:37)
+      at normalizeFile.next (<anonymous>)
+      at run (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\core\lib\transformation\index.js:22:50)
+      at run.next (<anonymous>)
+      at transform (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\core\lib\transform.js:22:33)
+      at transform.next (<anonymous>)
+      at step (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:261:32)
+      at C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:273:13
+      at async.call.result.err.err (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:223:11)
+      at C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:189:28
+      at C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\core\lib\gensync-utils\async.js:67:7
+      at C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:113:33
+      at step (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:287:14)
+      at C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:273:13
+      at async.call.result.err.err (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\gensync\index.js:223:11)
+[2m5:25:25 am[22m [31m[1m[vite][22m[39m [31mInternal server error: C:\Users\Akash\Downloads\Frontend-Grad\src\app\components\DirectoryPage.tsx: Identifier 'search' has already been declared. (73:8)
+
+[0m [90m 71 |[31m }{
+ [90m 72 |[31m   alumniList[33m.[31mlength [33m===[31m [35m0[31m [33m&&[31m [33m<[31m[33mp[31m className[33m=[31m[32m"text-gray-500"[31m[33m>[31m[33mNo[31m alumni found[33m.[31m[33m<[31m[33m/[31m[33mp[31m[33m>[31m[33m;[31m
+[31m[1m>[22m[31m[90m 73 |[31m }[36mconst[31m [search[33m,[31m setSearch] [33m=[31m useState([32m""[31m)[33m;[31m
+ [90m    |[31m         [31m[1m^[22m[31m
+ [90m 74 |[31m   [36mreturn[31m (
+ [90m 75 |[31m     [33m<[31m[33mdiv[31m className[33m=[31m[32m"flex-1 overflow-y-auto bg-slate-50"[31m[33m>[31m
+ [90m 76 |[31m       [33m<[31m[33mdiv[31m className[33m=[31m[32m"p-6 max-w-6xl mx-auto space-y-6"[31m[33m>[31m[0m[39m
+  Plugin: [35mvite:react-babel[39m
+  File: [36mC:/Users/Akash/Downloads/Frontend-Grad/src/app/components/DirectoryPage.tsx[39m:73:8
+[33m  71 |  }{
+  72 |    alumniList.length === 0 && <p className="text-gray-500">No alumni found.</p>;
+  73 |  }const [search, setSearch] = useState("");
+     |          ^
+  74 |    return (
+  75 |      <div className="flex-1 overflow-y-auto bg-slate-50">[39m
+      at constructor (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:365:19)
+      at TypeScriptParserMixin.raise (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:6616:19)
+      at TypeScriptScopeHandler.checkRedeclarationInScope (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:1619:19)
+      at TypeScriptScopeHandler.declareName (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:1585:12)
+      at TypeScriptScopeHandler.declareName (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:4892:11)
+      at TypeScriptParserMixin.declareNameFromIdentifier (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:7584:16)
+      at TypeScriptParserMixin.checkIdentifier (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:7580:12)
+      at TypeScriptParserMixin.checkLVal (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:7517:12)
+      at TypeScriptParserMixin.checkLVal (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:7557:16)
+      at TypeScriptParserMixin.parseVarId (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13429:10)
+      at TypeScriptParserMixin.parseVarId (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:9769:11)
+      at TypeScriptParserMixin.parseVar (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13400:12)
+      at TypeScriptParserMixin.parseVarStatement (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13247:10)
+      at TypeScriptParserMixin.parseVarStatement (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:9425:31)
+      at TypeScriptParserMixin.parseStatementContent (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12868:23)
+      at TypeScriptParserMixin.parseStatementContent (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:9525:18)
+      at TypeScriptParserMixin.parseStatementLike (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12784:17)
+      at TypeScriptParserMixin.parseStatementListItem (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12764:17)
+      at TypeScriptParserMixin.parseBlockOrModuleBlockBody (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13333:61)
+      at TypeScriptParserMixin.parseBlockBody (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13326:10)
+      at TypeScriptParserMixin.parseBlock (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13314:10)
+      at TypeScriptParserMixin.parseFunctionBody (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12117:24)
+      at TypeScriptParserMixin.parseFunctionBodyAndFinish (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12103:10)
+      at TypeScriptParserMixin.parseFunctionBodyAndFinish (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:9189:18)
+      at C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13462:12
+      at TypeScriptParserMixin.withSmartMixTopicForbiddingContext (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12420:14)
+      at TypeScriptParserMixin.parseFunction (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13461:10)
+      at TypeScriptParserMixin.parseExportDefaultExpression (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13924:19)
+      at TypeScriptParserMixin.parseExportDefaultExpression (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:9419:18)
+      at TypeScriptParserMixin.parseExport (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13845:25)
+      at TypeScriptParserMixin.parseExport (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:9402:20)
+      at TypeScriptParserMixin.parseStatementContent (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12895:27)
+      at TypeScriptParserMixin.parseStatementContent (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:9525:18)
+      at TypeScriptParserMixin.parseStatementLike (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12784:17)
+      at TypeScriptParserMixin.parseModuleItem (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12761:17)
+      at TypeScriptParserMixin.parseBlockOrModuleBlockBody (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13333:36)
+      at TypeScriptParserMixin.parseBlockBody (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13326:10)
+      at TypeScriptParserMixin.parseProgram (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12639:10)
+      at TypeScriptParserMixin.parseTopLevel (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12629:25)
+      at TypeScriptParserMixin.parse (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:14505:25)
+      at TypeScriptParserMixin.parse (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:10143:18)
+      at parse (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:14539:38)
+      at parser (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\core\lib\parser\index.js:41:34)
+      at parser.next (<anonymous>)
+      at normalizeFile (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\core\lib\transformation\normalize-file.js:51:37)
+      at normalizeFile.next (<anonymous>)
+      at run (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\core\lib\transformation\index.js:22:50)
+      at run.next (<anonymous>)
+      at transform (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\core\lib\transform.js:22:33)
+      at transform.next (<anonymous>)
+[2m5:25:33 am[22m [31m[1m[vite][22m[39m [31mInternal server error: C:\Users\Akash\Downloads\Frontend-Grad\src\app\components\DirectoryPage.tsx: Identifier 'search' has already been declared. (73:8)
+
+[0m [90m 71 |[31m }{
+ [90m 72 |[31m   alumniList[33m.[31mlength [33m===[31m [35m0[31m [33m&&[31m [33m<[31m[33mp[31m className[33m=[31m[32m"text-gray-500"[31m[33m>[31m[33mNo[31m alumni found[33m.[31m[33m<[31m[33m/[31m[33mp[31m[33m>[31m[33m;[31m
+[31m[1m>[22m[31m[90m 73 |[31m }[36mconst[31m [search[33m,[31m setSearch] [33m=[31m useState([32m""[31m)[33m;[31m
+ [90m    |[31m         [31m[1m^[22m[31m
+ [90m 74 |[31m [36mconst[31m filteredAlumni [33m=[31m alumniList[33m.[31mfilter(
+ [90m 75 |[31m   (person) [33m=>[31m
+ [90m 76 |[31m     person[33m.[31mdisplay_name[33m?[31m[33m.[31mtoLowerCase()[33m.[31mincludes(search[33m.[31mtoLowerCase()) [33m||[31m[0m[39m
+  Plugin: [35mvite:react-babel[39m
+  File: [36mC:/Users/Akash/Downloads/Frontend-Grad/src/app/components/DirectoryPage.tsx[39m:73:8
+[33m  71 |  }{
+  72 |    alumniList.length === 0 && <p className="text-gray-500">No alumni found.</p>;
+  73 |  }const [search, setSearch] = useState("");
+     |          ^
+  74 |  const filteredAlumni = alumniList.filter(
+  75 |    (person) =>[39m
+      at constructor (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:365:19)
+      at TypeScriptParserMixin.raise (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:6616:19)
+      at TypeScriptScopeHandler.checkRedeclarationInScope (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:1619:19)
+      at TypeScriptScopeHandler.declareName (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:1585:12)
+      at TypeScriptScopeHandler.declareName (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:4892:11)
+      at TypeScriptParserMixin.declareNameFromIdentifier (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:7584:16)
+      at TypeScriptParserMixin.checkIdentifier (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:7580:12)
+      at TypeScriptParserMixin.checkLVal (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:7517:12)
+      at TypeScriptParserMixin.checkLVal (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:7557:16)
+      at TypeScriptParserMixin.parseVarId (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13429:10)
+      at TypeScriptParserMixin.parseVarId (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:9769:11)
+      at TypeScriptParserMixin.parseVar (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13400:12)
+      at TypeScriptParserMixin.parseVarStatement (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13247:10)
+      at TypeScriptParserMixin.parseVarStatement (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:9425:31)
+      at TypeScriptParserMixin.parseStatementContent (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12868:23)
+      at TypeScriptParserMixin.parseStatementContent (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:9525:18)
+      at TypeScriptParserMixin.parseStatementLike (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12784:17)
+      at TypeScriptParserMixin.parseStatementListItem (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12764:17)
+      at TypeScriptParserMixin.parseBlockOrModuleBlockBody (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13333:61)
+      at TypeScriptParserMixin.parseBlockBody (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13326:10)
+      at TypeScriptParserMixin.parseBlock (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13314:10)
+      at TypeScriptParserMixin.parseFunctionBody (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12117:24)
+      at TypeScriptParserMixin.parseFunctionBodyAndFinish (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12103:10)
+      at TypeScriptParserMixin.parseFunctionBodyAndFinish (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:9189:18)
+      at C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13462:12
+      at TypeScriptParserMixin.withSmartMixTopicForbiddingContext (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12420:14)
+      at TypeScriptParserMixin.parseFunction (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13461:10)
+      at TypeScriptParserMixin.parseExportDefaultExpression (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13924:19)
+      at TypeScriptParserMixin.parseExportDefaultExpression (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:9419:18)
+      at TypeScriptParserMixin.parseExport (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13845:25)
+      at TypeScriptParserMixin.parseExport (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:9402:20)
+      at TypeScriptParserMixin.parseStatementContent (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12895:27)
+      at TypeScriptParserMixin.parseStatementContent (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:9525:18)
+      at TypeScriptParserMixin.parseStatementLike (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12784:17)
+      at TypeScriptParserMixin.parseModuleItem (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12761:17)
+      at TypeScriptParserMixin.parseBlockOrModuleBlockBody (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13333:36)
+      at TypeScriptParserMixin.parseBlockBody (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13326:10)
+      at TypeScriptParserMixin.parseProgram (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12639:10)
+      at TypeScriptParserMixin.parseTopLevel (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12629:25)
+      at TypeScriptParserMixin.parse (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:14505:25)
+      at TypeScriptParserMixin.parse (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:10143:18)
+      at parse (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:14539:38)
+      at parser (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\core\lib\parser\index.js:41:34)
+      at parser.next (<anonymous>)
+      at normalizeFile (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\core\lib\transformation\normalize-file.js:51:37)
+      at normalizeFile.next (<anonymous>)
+      at run (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\core\lib\transformation\index.js:22:50)
+      at run.next (<anonymous>)
+      at transform (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\core\lib\transform.js:22:33)
+      at transform.next (<anonymous>)
+[2m5:25:37 am[22m [31m[1m[vite][22m[39m [31mInternal server error: C:\Users\Akash\Downloads\Frontend-Grad\src\app\components\DirectoryPage.tsx: Identifier 'search' has already been declared. (74:7)
+
+[0m [90m 72 |[31m   alumniList[33m.[31mlength [33m===[31m [35m0[31m [33m&&[31m [33m<[31m[33mp[31m className[33m=[31m[32m"text-gray-500"[31m[33m>[31m[33mNo[31m alumni found[33m.[31m[33m<[31m[33m/[31m[33mp[31m[33m>[31m[33m;[31m
+ [90m 73 |[31m }
+[31m[1m>[22m[31m[90m 74 |[31m [36mconst[31m [search[33m,[31m setSearch] [33m=[31m useState([32m""[31m)[33m;[31m
+ [90m    |[31m        [31m[1m^[22m[31m
+ [90m 75 |[31m [36mconst[31m filteredAlumni [33m=[31m alumniList[33m.[31mfilter(
+ [90m 76 |[31m   (person) [33m=>[31m
+ [90m 77 |[31m     person[33m.[31mdisplay_name[33m?[31m[33m.[31mtoLowerCase()[33m.[31mincludes(search[33m.[31mtoLowerCase()) [33m||[31m[0m[39m
+  Plugin: [35mvite:react-babel[39m
+  File: [36mC:/Users/Akash/Downloads/Frontend-Grad/src/app/components/DirectoryPage.tsx[39m:74:7
+[33m  72 |    alumniList.length === 0 && <p className="text-gray-500">No alumni found.</p>;
+  73 |  }
+  74 |  const [search, setSearch] = useState("");
+     |         ^
+  75 |  const filteredAlumni = alumniList.filter(
+  76 |    (person) =>[39m
+      at constructor (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:365:19)
+      at TypeScriptParserMixin.raise (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:6616:19)
+      at TypeScriptScopeHandler.checkRedeclarationInScope (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:1619:19)
+      at TypeScriptScopeHandler.declareName (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:1585:12)
+      at TypeScriptScopeHandler.declareName (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:4892:11)
+      at TypeScriptParserMixin.declareNameFromIdentifier (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:7584:16)
+      at TypeScriptParserMixin.checkIdentifier (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:7580:12)
+      at TypeScriptParserMixin.checkLVal (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:7517:12)
+      at TypeScriptParserMixin.checkLVal (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:7557:16)
+      at TypeScriptParserMixin.parseVarId (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13429:10)
+      at TypeScriptParserMixin.parseVarId (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:9769:11)
+      at TypeScriptParserMixin.parseVar (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13400:12)
+      at TypeScriptParserMixin.parseVarStatement (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13247:10)
+      at TypeScriptParserMixin.parseVarStatement (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:9425:31)
+      at TypeScriptParserMixin.parseStatementContent (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12868:23)
+      at TypeScriptParserMixin.parseStatementContent (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:9525:18)
+      at TypeScriptParserMixin.parseStatementLike (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12784:17)
+      at TypeScriptParserMixin.parseStatementListItem (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12764:17)
+      at TypeScriptParserMixin.parseBlockOrModuleBlockBody (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13333:61)
+      at TypeScriptParserMixin.parseBlockBody (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13326:10)
+      at TypeScriptParserMixin.parseBlock (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13314:10)
+      at TypeScriptParserMixin.parseFunctionBody (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12117:24)
+      at TypeScriptParserMixin.parseFunctionBodyAndFinish (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12103:10)
+      at TypeScriptParserMixin.parseFunctionBodyAndFinish (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:9189:18)
+      at C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13462:12
+      at TypeScriptParserMixin.withSmartMixTopicForbiddingContext (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12420:14)
+      at TypeScriptParserMixin.parseFunction (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13461:10)
+      at TypeScriptParserMixin.parseExportDefaultExpression (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13924:19)
+      at TypeScriptParserMixin.parseExportDefaultExpression (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:9419:18)
+      at TypeScriptParserMixin.parseExport (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13845:25)
+      at TypeScriptParserMixin.parseExport (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:9402:20)
+      at TypeScriptParserMixin.parseStatementContent (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12895:27)
+      at TypeScriptParserMixin.parseStatementContent (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:9525:18)
+      at TypeScriptParserMixin.parseStatementLike (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12784:17)
+      at TypeScriptParserMixin.parseModuleItem (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12761:17)
+      at TypeScriptParserMixin.parseBlockOrModuleBlockBody (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13333:36)
+      at TypeScriptParserMixin.parseBlockBody (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13326:10)
+      at TypeScriptParserMixin.parseProgram (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12639:10)
+      at TypeScriptParserMixin.parseTopLevel (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12629:25)
+      at TypeScriptParserMixin.parse (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:14505:25)
+      at TypeScriptParserMixin.parse (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:10143:18)
+      at parse (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:14539:38)
+      at parser (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\core\lib\parser\index.js:41:34)
+      at parser.next (<anonymous>)
+      at normalizeFile (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\core\lib\transformation\normalize-file.js:51:37)
+      at normalizeFile.next (<anonymous>)
+      at run (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\core\lib\transformation\index.js:22:50)
+      at run.next (<anonymous>)
+      at transform (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\core\lib\transform.js:22:33)
+      at transform.next (<anonymous>)
+[2m5:26:01 am[22m [31m[1m[vite][22m[39m [31mInternal server error: C:\Users\Akash\Downloads\Frontend-Grad\src\app\components\DirectoryPage.tsx: Identifier 'search' has already been declared. (74:7)
+
+[0m [90m 72 |[31m   alumniList[33m.[31mlength [33m===[31m [35m0[31m [33m&&[31m [33m<[31m[33mp[31m className[33m=[31m[32m"text-gray-500"[31m[33m>[31m[33mNo[31m alumni found[33m.[31m[33m<[31m[33m/[31m[33mp[31m[33m>[31m[33m;[31m
+ [90m 73 |[31m }
+[31m[1m>[22m[31m[90m 74 |[31m [36mconst[31m [search[33m,[31m setSearch] [33m=[31m useState([32m""[31m)[33m;[31m
+ [90m    |[31m        [31m[1m^[22m[31m
+ [90m 75 |[31m [36mconst[31m filteredAlumni [33m=[31m alumniList[33m.[31mfilter(
+ [90m 76 |[31m   (person) [33m=>[31m
+ [90m 77 |[31m     person[33m.[31mdisplay_name[33m?[31m[33m.[31mtoLowerCase()[33m.[31mincludes(search[33m.[31mtoLowerCase()) [33m||[31m[0m[39m
+  Plugin: [35mvite:react-babel[39m
+  File: [36mC:/Users/Akash/Downloads/Frontend-Grad/src/app/components/DirectoryPage.tsx[39m:74:7
+[33m  72 |    alumniList.length === 0 && <p className="text-gray-500">No alumni found.</p>;
+  73 |  }
+  74 |  const [search, setSearch] = useState("");
+     |         ^
+  75 |  const filteredAlumni = alumniList.filter(
+  76 |    (person) =>[39m
+      at constructor (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:365:19)
+      at TypeScriptParserMixin.raise (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:6616:19)
+      at TypeScriptScopeHandler.checkRedeclarationInScope (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:1619:19)
+      at TypeScriptScopeHandler.declareName (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:1585:12)
+      at TypeScriptScopeHandler.declareName (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:4892:11)
+      at TypeScriptParserMixin.declareNameFromIdentifier (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:7584:16)
+      at TypeScriptParserMixin.checkIdentifier (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:7580:12)
+      at TypeScriptParserMixin.checkLVal (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:7517:12)
+      at TypeScriptParserMixin.checkLVal (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:7557:16)
+      at TypeScriptParserMixin.parseVarId (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13429:10)
+      at TypeScriptParserMixin.parseVarId (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:9769:11)
+      at TypeScriptParserMixin.parseVar (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13400:12)
+      at TypeScriptParserMixin.parseVarStatement (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13247:10)
+      at TypeScriptParserMixin.parseVarStatement (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:9425:31)
+      at TypeScriptParserMixin.parseStatementContent (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12868:23)
+      at TypeScriptParserMixin.parseStatementContent (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:9525:18)
+      at TypeScriptParserMixin.parseStatementLike (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12784:17)
+      at TypeScriptParserMixin.parseStatementListItem (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12764:17)
+      at TypeScriptParserMixin.parseBlockOrModuleBlockBody (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13333:61)
+      at TypeScriptParserMixin.parseBlockBody (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13326:10)
+      at TypeScriptParserMixin.parseBlock (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13314:10)
+      at TypeScriptParserMixin.parseFunctionBody (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12117:24)
+      at TypeScriptParserMixin.parseFunctionBodyAndFinish (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12103:10)
+      at TypeScriptParserMixin.parseFunctionBodyAndFinish (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:9189:18)
+      at C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13462:12
+      at TypeScriptParserMixin.withSmartMixTopicForbiddingContext (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12420:14)
+      at TypeScriptParserMixin.parseFunction (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13461:10)
+      at TypeScriptParserMixin.parseExportDefaultExpression (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13924:19)
+      at TypeScriptParserMixin.parseExportDefaultExpression (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:9419:18)
+      at TypeScriptParserMixin.parseExport (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13845:25)
+      at TypeScriptParserMixin.parseExport (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:9402:20)
+      at TypeScriptParserMixin.parseStatementContent (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12895:27)
+      at TypeScriptParserMixin.parseStatementContent (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:9525:18)
+      at TypeScriptParserMixin.parseStatementLike (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12784:17)
+      at TypeScriptParserMixin.parseModuleItem (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12761:17)
+      at TypeScriptParserMixin.parseBlockOrModuleBlockBody (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13333:36)
+      at TypeScriptParserMixin.parseBlockBody (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13326:10)
+      at TypeScriptParserMixin.parseProgram (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12639:10)
+      at TypeScriptParserMixin.parseTopLevel (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12629:25)
+      at TypeScriptParserMixin.parse (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:14505:25)
+      at TypeScriptParserMixin.parse (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:10143:18)
+      at parse (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:14539:38)
+      at parser (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\core\lib\parser\index.js:41:34)
+      at parser.next (<anonymous>)
+      at normalizeFile (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\core\lib\transformation\normalize-file.js:51:37)
+      at normalizeFile.next (<anonymous>)
+      at run (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\core\lib\transformation\index.js:22:50)
+      at run.next (<anonymous>)
+      at transform (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\core\lib\transform.js:22:33)
+      at transform.next (<anonymous>)
+[2m5:26:20 am[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m Pre-transform error: C:\Users\Akash\Downloads\Frontend-Grad\src\app\components\DirectoryPage.tsx: Identifier 'search' has already been declared. (74:7)
+
+[0m [90m 72 |[39m   alumniList[33m.[39mlength [33m===[39m [35m0[39m [33m&&[39m [33m<[39m[33mp[39m className[33m=[39m[32m"text-gray-500"[39m[33m>[39m[33mNo[39m alumni found[33m.[39m[33m<[39m[33m/[39m[33mp[39m[33m>[39m[33m;[39m
+ [90m 73 |[39m }
+[31m[1m>[22m[39m[90m 74 |[39m [36mconst[39m [search[33m,[39m setSearch] [33m=[39m useState([32m""[39m)[33m;[39m
+ [90m    |[39m        [31m[1m^[22m[39m
+ [90m 75 |[39m [36mconst[39m filteredAlumni [33m=[39m alumniList[33m.[39mfilter(
+ [90m 76 |[39m   (person) [33m=>[39m
+ [90m 77 |[39m     person[33m.[39mdisplay_name[33m?[39m[33m.[39mtoLowerCase()[33m.[39mincludes(search[33m.[39mtoLowerCase()) [33m||[39m[0m
+  Plugin: [35mvite:react-babel[39m
+  File: [36mC:/Users/Akash/Downloads/Frontend-Grad/src/app/components/DirectoryPage.tsx[39m:74:7
+[33m  72 |    alumniList.length === 0 && <p className="text-gray-500">No alumni found.</p>;
+  73 |  }
+  74 |  const [search, setSearch] = useState("");
+     |         ^
+  75 |  const filteredAlumni = alumniList.filter(
+  76 |    (person) =>[39m
+[2m5:26:20 am[22m [31m[1m[vite][22m[39m [31mInternal server error: C:\Users\Akash\Downloads\Frontend-Grad\src\app\components\DirectoryPage.tsx: Identifier 'search' has already been declared. (74:7)
+
+[0m [90m 72 |[31m   alumniList[33m.[31mlength [33m===[31m [35m0[31m [33m&&[31m [33m<[31m[33mp[31m className[33m=[31m[32m"text-gray-500"[31m[33m>[31m[33mNo[31m alumni found[33m.[31m[33m<[31m[33m/[31m[33mp[31m[33m>[31m[33m;[31m
+ [90m 73 |[31m }
+[31m[1m>[22m[31m[90m 74 |[31m [36mconst[31m [search[33m,[31m setSearch] [33m=[31m useState([32m""[31m)[33m;[31m
+ [90m    |[31m        [31m[1m^[22m[31m
+ [90m 75 |[31m [36mconst[31m filteredAlumni [33m=[31m alumniList[33m.[31mfilter(
+ [90m 76 |[31m   (person) [33m=>[31m
+ [90m 77 |[31m     person[33m.[31mdisplay_name[33m?[31m[33m.[31mtoLowerCase()[33m.[31mincludes(search[33m.[31mtoLowerCase()) [33m||[31m[0m[39m
+  Plugin: [35mvite:react-babel[39m
+  File: [36mC:/Users/Akash/Downloads/Frontend-Grad/src/app/components/DirectoryPage.tsx[39m:74:7
+[33m  72 |    alumniList.length === 0 && <p className="text-gray-500">No alumni found.</p>;
+  73 |  }
+  74 |  const [search, setSearch] = useState("");
+     |         ^
+  75 |  const filteredAlumni = alumniList.filter(
+  76 |    (person) =>[39m
+      at constructor (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:365:19)
+      at TypeScriptParserMixin.raise (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:6616:19)
+      at TypeScriptScopeHandler.checkRedeclarationInScope (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:1619:19)
+      at TypeScriptScopeHandler.declareName (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:1585:12)
+      at TypeScriptScopeHandler.declareName (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:4892:11)
+      at TypeScriptParserMixin.declareNameFromIdentifier (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:7584:16)
+      at TypeScriptParserMixin.checkIdentifier (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:7580:12)
+      at TypeScriptParserMixin.checkLVal (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:7517:12)
+      at TypeScriptParserMixin.checkLVal (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:7557:16)
+      at TypeScriptParserMixin.parseVarId (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13429:10)
+      at TypeScriptParserMixin.parseVarId (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:9769:11)
+      at TypeScriptParserMixin.parseVar (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13400:12)
+      at TypeScriptParserMixin.parseVarStatement (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13247:10)
+      at TypeScriptParserMixin.parseVarStatement (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:9425:31)
+      at TypeScriptParserMixin.parseStatementContent (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12868:23)
+      at TypeScriptParserMixin.parseStatementContent (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:9525:18)
+      at TypeScriptParserMixin.parseStatementLike (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12784:17)
+      at TypeScriptParserMixin.parseStatementListItem (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12764:17)
+      at TypeScriptParserMixin.parseBlockOrModuleBlockBody (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13333:61)
+      at TypeScriptParserMixin.parseBlockBody (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13326:10)
+      at TypeScriptParserMixin.parseBlock (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13314:10)
+      at TypeScriptParserMixin.parseFunctionBody (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12117:24)
+      at TypeScriptParserMixin.parseFunctionBodyAndFinish (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12103:10)
+      at TypeScriptParserMixin.parseFunctionBodyAndFinish (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:9189:18)
+      at C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13462:12
+      at TypeScriptParserMixin.withSmartMixTopicForbiddingContext (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12420:14)
+      at TypeScriptParserMixin.parseFunction (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13461:10)
+      at TypeScriptParserMixin.parseExportDefaultExpression (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13924:19)
+      at TypeScriptParserMixin.parseExportDefaultExpression (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:9419:18)
+      at TypeScriptParserMixin.parseExport (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13845:25)
+      at TypeScriptParserMixin.parseExport (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:9402:20)
+      at TypeScriptParserMixin.parseStatementContent (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12895:27)
+      at TypeScriptParserMixin.parseStatementContent (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:9525:18)
+      at TypeScriptParserMixin.parseStatementLike (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12784:17)
+      at TypeScriptParserMixin.parseModuleItem (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12761:17)
+      at TypeScriptParserMixin.parseBlockOrModuleBlockBody (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13333:36)
+      at TypeScriptParserMixin.parseBlockBody (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:13326:10)
+      at TypeScriptParserMixin.parseProgram (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12639:10)
+      at TypeScriptParserMixin.parseTopLevel (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:12629:25)
+      at TypeScriptParserMixin.parse (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:14505:25)
+      at TypeScriptParserMixin.parse (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:10143:18)
+      at parse (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\parser\lib\index.js:14539:38)
+      at parser (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\core\lib\parser\index.js:41:34)
+      at parser.next (<anonymous>)
+      at normalizeFile (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\core\lib\transformation\normalize-file.js:51:37)
+      at normalizeFile.next (<anonymous>)
+      at run (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\core\lib\transformation\index.js:22:50)
+      at run.next (<anonymous>)
+      at transform (C:\Users\Akash\Downloads\Frontend-Grad\node_modules\@babel\core\lib\transform.js:22:33)
+      at transform.next (<anonymous>)
