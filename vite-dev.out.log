@@ -1,0 +1,58 @@
+
+> @figma/my-make-file@0.0.1 dev
+> vite --host 127.0.0.1
+
+
+  [32m[1mVITE[22m v6.3.5[39m  [2mready in [0m[1m350[22m[2m[0m ms[22m
+
+  [32m➜[39m  [1mLocal[22m:   [36mhttp://127.0.0.1:[1m5173[22m/[39m
+[2m3:21:53 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/app/components/LoginPage.tsx, /src/styles/index.css[22m
+[2m3:29:10 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/app/components/AlumniDashboard.tsx, /src/styles/index.css[22m
+[2m3:29:11 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/app/components/AlumniDashboard.tsx, /src/styles/index.css[22m
+[2m3:29:19 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/app/components/AlumniDashboard.tsx, /src/styles/index.css[22m
+[2m3:29:30 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/app/components/AlumniDashboard.tsx, /src/styles/index.css[22m
+[2m3:29:34 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/app/App.tsx, /src/styles/index.css[22m
+[2m3:29:50 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/app/components/AlumniDashboard.tsx, /src/styles/index.css[22m
+[2m3:29:51 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/app/components/AlumniDashboard.tsx, /src/styles/index.css[22m
+[2m3:29:55 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/app/components/AlumniDashboard.tsx, /src/styles/index.css[22m
+[2m3:33:19 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/app/components/AdminDashboard.tsx, /src/styles/index.css[22m
+[2m3:33:21 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/app/components/AdminDashboard.tsx, /src/styles/index.css[22m
+[2m3:33:23 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/app/components/AdminDashboard.tsx, /src/styles/index.css[22m
+[2m3:37:07 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/app/App.tsx, /src/styles/index.css[22m
+[2m3:37:11 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/app/App.tsx, /src/styles/index.css[22m
+[2m3:38:31 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/app/App.tsx, /src/styles/index.css[22m
+[2m3:39:08 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/app/components/AdminDashboard.tsx, /src/styles/index.css[22m
+[2m3:39:08 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/app/components/AlumniDashboard.tsx, /src/styles/index.css[22m
+[2m3:47:27 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/app/components/JobsPage.tsx, /src/styles/index.css[22m
+[2m3:47:35 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/app/components/JobsPage.tsx, /src/styles/index.css[22m
+[2m3:47:50 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/app/components/JobsPage.tsx, /src/styles/index.css[22m
+[2m3:47:59 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/app/components/JobsPage.tsx, /src/styles/index.css[22m
+[2m3:48:31 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/app/components/JobsPage.tsx, /src/styles/index.css[22m
+[2m3:48:33 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/app/components/JobsPage.tsx, /src/styles/index.css[22m
+[2m3:49:00 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/app/components/JobsPage.tsx, /src/styles/index.css[22m
+[2m3:49:02 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/app/components/JobsPage.tsx, /src/styles/index.css[22m
+[2m3:49:13 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/app/components/JobsPage.tsx, /src/styles/index.css[22m
+[2m3:49:14 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/app/components/JobsPage.tsx, /src/styles/index.css[22m
+[2m3:50:03 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/app/components/JobsPage.tsx, /src/styles/index.css[22m
+[2m3:50:12 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/app/components/JobsPage.tsx, /src/styles/index.css[22m
+[2m3:50:19 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/app/components/JobsPage.tsx, /src/styles/index.css[22m
+[2m3:50:27 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/app/components/JobsPage.tsx, /src/styles/index.css[22m
+[2m3:50:41 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/app/components/JobsPage.tsx, /src/styles/index.css[22m
+[2m3:50:45 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/app/components/JobsPage.tsx, /src/styles/index.css[22m
+[2m3:50:46 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/app/components/JobsPage.tsx, /src/styles/index.css[22m
+[2m3:51:09 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/app/components/JobsPage.tsx, /src/styles/index.css[22m
+[2m3:51:15 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/app/components/JobsPage.tsx, /src/styles/index.css[22m
+[2m3:51:17 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/app/components/JobsPage.tsx, /src/styles/index.css[22m
+[2m3:51:19 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/app/components/JobsPage.tsx, /src/styles/index.css[22m
+[2m3:53:31 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/app/components/JobsPage.tsx, /src/styles/index.css[22m
+[2m3:55:22 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/app/components/JobsPage.tsx, /src/styles/index.css[22m
+[2m3:55:35 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/app/components/JobsPage.tsx, /src/styles/index.css[22m
+[2m3:56:45 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/app/components/JobsPage.tsx, /src/styles/index.css[22m
+[2m4:01:26 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/app/components/LoginPage.tsx, /src/styles/index.css[22m
+[2m4:01:48 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/app/components/JobsPage.tsx, /src/styles/index.css[22m
+[2m4:02:01 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/app/components/JobsPage.tsx, /src/styles/index.css[22m
+[2m4:02:13 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/app/components/JobsPage.tsx, /src/styles/index.css[22m
+[2m4:02:25 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/app/components/JobsPage.tsx, /src/styles/index.css[22m
+[2m4:02:36 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/app/components/JobsPage.tsx, /src/styles/index.css[22m
+[2m4:02:46 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/app/components/JobsPage.tsx, /src/styles/index.css[22m
+[2m4:03:50 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/app/components/JobsPage.tsx, /src/styles/index.css[22m

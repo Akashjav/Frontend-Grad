@@ -9,18 +9,23 @@ import Avatar from "./Avatar";
 import StatCard from "./StatCard";
 
 export default function StudentDashboard({ navigate }: { navigate: (p: Page) => void }) {
-  const upcomingEvents = [
-    { title: "AI & Automation Webinar", date: "Jun 22", time: "3 PM", type: "Webinar" },
-    { title: "Resume Workshop", date: "Jun 28", time: "11 AM", type: "Workshop" },
-  ];
+  const upcomingEvents = events.slice(0, 3).map(event => {
+    const [month, rawDay] = event.date.split(" ");
+
+    return {
+      ...event,
+      month,
+      day: rawDay?.replace(",", "") ?? "",
+    };
+  });
   const mentorRequests = [
-    { mentor: "Arjun Mehta", role: "PM at Microsoft", status: "pending", date: "Sent 2 days ago" },
-    { mentor: "Divya Nair", role: "UX Designer at Figma", status: "accepted", date: "Confirmed for Jun 25" },
+    { mentor: "Priya Sharma", role: "Senior Software Engineer at Google", status: "accepted", date: "Session on Jun 24" },
+    { mentor: "Arjun Mehta", role: "Product Manager at Microsoft", status: "pending", date: "Requested 2 days ago" },
   ];
   const messages = [
-    { from: "Karthik Rajan", preview: "Hey! Looked at your resume — there are a few things...", time: "10 min ago", unread: true },
-    { from: "Placement Cell", preview: "TCS Drive 2025 – Register by June 25th", time: "2 hrs ago", unread: true },
-    { from: "Priya Sharma", preview: "Good luck with the interview tomorrow! You've got this.", time: "Yesterday", unread: false },
+    { from: "Priya Sharma", preview: "Happy to review your resume before the workshop.", time: "10:24", unread: true },
+    { from: "Placement Cell", preview: "Your internship application list has been updated.", time: "09:12", unread: true },
+    { from: "Arjun Mehta", preview: "Let's schedule a quick mentoring intro call.", time: "Yesterday", unread: false },
   ];
 
   return (
@@ -134,8 +139,8 @@ export default function StudentDashboard({ navigate }: { navigate: (p: Page) => 
                 {upcomingEvents.map(e => (
                   <div key={e.title} className="flex gap-3">
                     <div className="w-10 h-10 rounded-lg bg-blue-50 flex flex-col items-center justify-center flex-shrink-0">
-                      <span className="text-[10px] text-blue-600 font-bold">{e.date.split(" ")[0].toUpperCase()}</span>
-                      <span className="text-sm font-bold text-blue-700">{e.date.split(" ")[1]}</span>
+                      <span className="text-[10px] text-blue-600 font-bold">{e.month.toUpperCase()}</span>
+                      <span className="text-sm font-bold text-blue-700">{e.day}</span>
                     </div>
                     <div>
                       <p className="text-xs font-semibold text-gray-900">{e.title}</p>
@@ -192,4 +197,3 @@ export default function StudentDashboard({ navigate }: { navigate: (p: Page) => 
     </div>
   );
 }
-

@@ -146,4 +146,3 @@ export default function AlumniDashboard({ navigate }: { navigate: (p: Page) => v
     </div>
   );
 }
-

@@ -12,7 +12,6 @@ import Flag from "./Flag";
 
 export default function AdminDashboard({ navigate }: { navigate: (p: Page) => void }) {
   const [activeTab, setActiveTab] = useState<"overview" | "users" | "verify" | "events" | "moderation">("overview");
-
   const tabs = [
     { id: "overview", label: "Overview" },
     { id: "users", label: "Users" },
@@ -198,4 +197,3 @@ export default function AdminDashboard({ navigate }: { navigate: (p: Page) => vo
     </div>
   );
 }
-

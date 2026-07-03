@@ -1,15 +1,36 @@
 import { useState } from "react";
-import { Send } from "lucide-react";
 import type { Page } from "../types";
 import { cn } from "../utils";
-import { alumni, jobs } from "../data";
 import Btn from "./Btn";
 import Card from "./Card";
+import { login, getMe } from "../../lib/authApi";
+
+function dashboardPageForRole(role: string): Page {
+  if (role === "admin") return "admin-dashboard";
+  if (role === "alumni") return "alumni-dashboard";
+  return "student-dashboard";
+}
 
 export default function LoginPage({ navigate }: { navigate: (p: Page) => void }) {
   const [role, setRole] = useState<"student" | "alumni" | "admin">("student");
   const [forgot, setForgot] = useState(false);
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [loggingIn, setLoggingIn] = useState(false);
 
+  async function handleLogin() {
+    setLoggingIn(true);
+
+    try {
+      await login(email, password);
+      const me = await getMe();
+      navigate(dashboardPageForRole(me.role));
+    } catch (err: any) {
+      alert(err.message);
+    } finally {
+      setLoggingIn(false);
+    }
+  }
   return (
     <div className="min-h-[calc(100vh-64px)] bg-slate-50 flex">
       {/* Left panel */}
@@ -69,11 +90,15 @@ export default function LoginPage({ navigate }: { navigate: (p: Page) => void })
                       {role === "admin" ? "Admin Email" : "Institutional Email / Roll No."}
                     </label>
                     <input type="email" placeholder={role === "admin" ? "admin@university.edu" : "rollno@university.edu"}
+                      value={email}
+                      onChange={e => setEmail(e.target.value)}
                       className="w-full border border-gray-200 rounded-lg px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 bg-slate-50" />
                   </div>
                   <div>
                     <label className="block text-sm font-medium text-gray-700 mb-1">Password</label>
                     <input type="password" placeholder="Enter password"
+                      value={password}
+                      onChange={e => setPassword(e.target.value)}
                       className="w-full border border-gray-200 rounded-lg px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 bg-slate-50" />
                   </div>
                 </div>
@@ -85,8 +110,8 @@ export default function LoginPage({ navigate }: { navigate: (p: Page) => void })
                   <button onClick={() => setForgot(true)} className="text-sm text-blue-600 hover:underline cursor-pointer">Forgot password?</button>
                 </div>
 
-                <Btn fullWidth size="lg" onClick={() => navigate(role === "student" ? "student-dashboard" : role === "alumni" ? "alumni-dashboard" : "admin-dashboard")}>
-                  Sign In as {role === "student" ? "Student" : role === "alumni" ? "Alumni" : "Admin"}
+                <Btn fullWidth size="lg" onClick={handleLogin} disabled={loggingIn}>
+                  {loggingIn ? "Signing In..." : `Sign In as ${role === "student" ? "Student" : role === "alumni" ? "Alumni" : "Admin"}`}
                 </Btn>
 
                 <div className="relative my-5">
@@ -111,4 +136,3 @@ export default function LoginPage({ navigate }: { navigate: (p: Page) => void })
     </div>
   );
 }
-
