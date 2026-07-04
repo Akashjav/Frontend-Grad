@@ -1,5 +1,9 @@
 import { useEffect, useState } from "react";
-import { getAdminDashboard } from "../../lib/adminApi";
+import {
+  getAdminDashboard,
+  getUsers,
+  updateUserRole,
+} from "../../lib/adminApi";
 import {
   GraduationCap,
   Users,
@@ -41,6 +45,9 @@ export default function AdminDashboard({
   const [loading, setLoading] = useState(true);
 
   const [error, setError] = useState("");
+  const [usersList, setUsersList] = useState<any[]>([]);
+  const [userSearch, setUserSearch] = useState("");
+  const [roleFilter, setRoleFilter] = useState("all");
   const tabs = [
     { id: "overview", label: "Overview" },
     { id: "users", label: "Users" },
@@ -63,6 +70,19 @@ export default function AdminDashboard({
       setLoading(false);
     }
   }
+  async function loadUsers() {
+    try {
+      const data = await getUsers();
+      setUsersList(data);
+    } catch (err: any) {
+      alert(err.message || "Failed to load users");
+    }
+  }
+  useEffect(() => {
+    if (activeTab === "users") {
+      loadUsers();
+    }
+  }, [activeTab]);
   if (loading) {
     return <div className="p-6">Loading Dashboard...</div>;
   }
@@ -70,6 +90,16 @@ export default function AdminDashboard({
   if (error) {
     return <div className="p-6 text-red-600">{error}</div>;
   }
+  const filteredUsers = usersList.filter((user) => {
+    const matchesSearch =
+      !userSearch ||
+      user.email?.toLowerCase().includes(userSearch.toLowerCase()) ||
+      user.id?.toLowerCase().includes(userSearch.toLowerCase());
+
+    const matchesRole = roleFilter === "all" || user.role === roleFilter;
+
+    return matchesSearch && matchesRole;
+  });
 
   return (
     <div className="flex-1 overflow-y-auto bg-slate-50">
@@ -269,15 +299,22 @@ export default function AdminDashboard({
                   className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400"
                 />
                 <input
+                  value={userSearch}
+                  onChange={(e) => setUserSearch(e.target.value)}
                   placeholder="Search users..."
                   className="w-full pl-9 pr-4 py-2 text-sm border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
                 />
               </div>
               <div className="flex gap-2">
-                <select className="text-sm border border-gray-200 rounded-lg px-3 py-2 text-gray-600">
-                  <option>All Roles</option>
-                  <option>Student</option>
-                  <option>Alumni</option>
+                <select
+                  value={roleFilter}
+                  onChange={(e) => setRoleFilter(e.target.value)}
+                  className="text-sm border border-gray-200 rounded-lg px-3 py-2 text-gray-600"
+                >
+                  <option value="all">All Roles</option>
+                  <option value="student">Student</option>
+                  <option value="alumni">Alumni</option>
+                  <option value="admin">Admin</option>
                 </select>
               </div>
             </div>
@@ -303,92 +340,81 @@ export default function AdminDashboard({
                   </tr>
                 </thead>
                 <tbody className="divide-y divide-gray-50">
-                  {[
-                    {
-                      name: "Aryan Kapoor",
-                      role: "Student",
-                      dept: "CSE",
-                      joined: "Jun 1, 2025",
-                      status: "active",
-                    },
-                    {
-                      name: "Priya Sharma",
-                      role: "Alumni",
-                      dept: "CSE",
-                      joined: "May 20, 2025",
-                      status: "verified",
-                    },
-                    {
-                      name: "Meera Patel",
-                      role: "Student",
-                      dept: "IT",
-                      joined: "Jun 3, 2025",
-                      status: "active",
-                    },
-                    {
-                      name: "Karthik Rajan",
-                      role: "Alumni",
-                      dept: "CSE",
-                      joined: "Apr 15, 2025",
-                      status: "verified",
-                    },
-                    {
-                      name: "Divya Nair",
-                      role: "Alumni",
-                      dept: "Design",
-                      joined: "Mar 10, 2025",
-                      status: "pending",
-                    },
-                  ].map((u) => (
+                  {filteredUsers.map((u) => (
                     <tr
-                      key={u.name}
+                      key={u.id}
                       className="hover:bg-slate-50 transition-colors"
                     >
                       <td className="px-4 py-3">
                         <div className="flex items-center gap-2">
-                          <Avatar name={u.name} size="sm" />
+                          <Avatar name={u.email} size="sm" />
                           <span className="font-medium text-gray-900">
-                            {u.name}
+                            {u.email}
                           </span>
                         </div>
                       </td>
-                      <td className="px-4 py-3">
-                        <Badge color={u.role === "Alumni" ? "indigo" : "blue"}>
-                          {u.role}
-                        </Badge>
-                      </td>
-                      <td className="px-4 py-3 text-gray-600">{u.dept}</td>
-                      <td className="px-4 py-3 text-gray-500 text-xs">
-                        {u.joined}
-                      </td>
+
                       <td className="px-4 py-3">
                         <Badge
                           color={
-                            u.status === "verified"
-                              ? "green"
-                              : u.status === "pending"
+                            u.role === "alumni"
+                              ? "indigo"
+                              : u.role === "admin"
                                 ? "amber"
                                 : "blue"
                           }
                         >
-                          {u.status}
+                          {u.role}
                         </Badge>
                       </td>
+
+                      <td className="px-4 py-3 text-gray-600">-</td>
+
+                      <td className="px-4 py-3 text-gray-500 text-xs">-</td>
+
                       <td className="px-4 py-3">
-                        <div className="flex gap-1">
+                        <Badge color={u.is_active ? "green" : "red"}>
+                          {u.is_active ? "active" : "inactive"}
+                        </Badge>
+                      </td>
+
+                      <td className="px-4 py-3">
+                        <div className="flex gap-2">
+                          <select
+                            value={u.role}
+                            onChange={async (e) => {
+                              try {
+                                await updateUserRole(u.id, e.target.value);
+                                await loadUsers();
+                                alert("Role updated");
+                              } catch (err: any) {
+                                alert(err.message || "Failed to update role");
+                              }
+                            }}
+                            className="text-xs border border-gray-200 rounded-lg px-2 py-1"
+                          >
+                            <option value="student">student</option>
+                            <option value="alumni">alumni</option>
+                            <option value="admin">admin</option>
+                          </select>
+
                           <Btn size="sm" variant="ghost">
                             <Eye size={14} />
-                          </Btn>
-                          <Btn size="sm" variant="ghost">
-                            <Edit3 size={14} />
-                          </Btn>
-                          <Btn size="sm" variant="ghost">
-                            <Trash2 size={14} />
                           </Btn>
                         </div>
                       </td>
                     </tr>
                   ))}
+                  {filteredUsers.length === 0 && (
+                    <tr>
+                      <td
+                        colSpan={6}
+                        className="px-4 py-8 text-center text-gray-500"
+                      >
+                        No users found.
+                      </td>
+                    </tr>
+                  )}
                 </tbody>
               </table>
             </div>

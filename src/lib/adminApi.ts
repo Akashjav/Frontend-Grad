@@ -9,9 +9,7 @@ export async function getUsers() {
 }
 
 export async function updateUserRole(userId: string, role: string) {
-  return api.patch(`/api/admin/users/${userId}/role`, {
-    role,
-  });
+  return api.patch(`/api/admin/users/${userId}/role?role=${role}`);
 }
 
 export async function verifyStudentDocument(documentId: number) {
