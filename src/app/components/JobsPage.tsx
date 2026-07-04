@@ -50,6 +50,7 @@ export default function JobsPage() {
   const [jobs, setJobs] = useState<any[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
+  const [search, setSearch] = useState("");
 
   useEffect(() => {
     let mounted = true;
@@ -143,13 +144,28 @@ export default function JobsPage() {
 
   const filtered = jobs.filter((job) => {
     const kind = jobKind(job);
+    const jobId = idFromJob(job);
+
+    const matchesSearch =
+      !search ||
+      String(job.title || job.job_title || job.role || "")
+        .toLowerCase()
+        .includes(search.toLowerCase()) ||
+      String(job.company || job.company_name || "")
+        .toLowerCase()
+        .includes(search.toLowerCase()) ||
+      String(job.tags || "")
+        .toLowerCase()
+        .includes(search.toLowerCase());
+
+    if (!matchesSearch) return false;
 
     if (tab === "internships") return kind === "internship";
     if (tab === "fulltime") return kind === "full-time" || kind === "fulltime";
-    if (tab === "saved") return saved.includes(idFromJob(job));
+    if (tab === "saved") return saved.includes(jobId);
+
     return true;
   });
-
   return (
     <div className="flex-1 overflow-y-auto bg-slate-50">
       <div className="p-6 max-w-6xl mx-auto space-y-6">
@@ -178,6 +194,8 @@ export default function JobsPage() {
               className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400"
             />
             <input
+              value={search}
+              onChange={(e) => setSearch(e.target.value)}
               placeholder="Search jobs, companies, skills..."
               className="w-full pl-9 pr-4 py-2.5 text-sm border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 bg-white"
             />
@@ -244,92 +262,112 @@ export default function JobsPage() {
           {filtered.map((j) => {
             const jobId = idFromJob(j);
             const company = j.company || j.company_name || "Company";
-            const tags = Array.isArray(j.tags) ? j.tags : [];
+            const tags = Array.isArray(j.tags)
+              ? j.tags
+              : typeof j.tags === "string"
+                ? j.tags
+                    .split(",")
+                    .map((t: string) => t.trim())
+                    .filter(Boolean)
+                : [];
             const type = j.type || j.job_type || "Job";
 
             return (
-            <Card key={j.id} hover className="p-5">
-              <div className="flex items-start gap-4">
-                <div className="w-12 h-12 rounded-xl bg-blue-50 flex items-center justify-center flex-shrink-0 text-blue-600 font-bold text-lg">
-                  {company.charAt(0)}
-                </div>
-                <div className="flex-1 min-w-0">
-                  <div className="flex items-start justify-between">
-                    <div>
-                      <h3
-                        className="font-semibold text-gray-900"
-                        style={{ fontFamily: "Poppins, sans-serif" }}
-                      >
+              <Card key={jobId} hover className="p-5">
+                <div className="flex items-start gap-4">
+                  <div className="w-12 h-12 rounded-xl bg-blue-50 flex items-center justify-center flex-shrink-0 text-blue-600 font-bold text-lg">
+                    {company.charAt(0)}
+                  </div>
+                  <div className="flex-1 min-w-0">
+                    <div className="flex items-start justify-between">
+                      <div>
+                        <h3
+                          className="font-semibold text-gray-900"
+                          style={{ fontFamily: "Poppins, sans-serif" }}
+                        >
                           {j.title || j.job_title || j.role || "Untitled role"}
-                      </h3>
-                      <p className="text-sm text-gray-600 mt-0.5">
-                        {company}
-                      </p>
+                        </h3>
+                        <p className="text-sm text-gray-600 mt-0.5">
+                          {company}
+                        </p>
+                      </div>
+                      <div className="flex flex-col items-end gap-2">
+                        <Badge
+                          color={jobKind(j) === "internship" ? "teal" : "blue"}
+                        >
+                          {type}
+                        </Badge>
+                        <button
+                          onClick={() => handleSave(jobId)}
+                          className={cn(
+                            "cursor-pointer transition-colors",
+                            saved.includes(jobId)
+                              ? "text-amber-500"
+                              : "text-gray-300 hover:text-amber-400",
+                          )}
+                        >
+                          <Bookmark
+                            size={18}
+                            fill={
+                              saved.includes(jobId) ? "currentColor" : "none"
+                            }
+                          />
+                        </button>
+                      </div>
                     </div>
-                    <div className="flex flex-col items-end gap-2">
-                      <Badge color={jobKind(j) === "internship" ? "teal" : "blue"}>
-                        {type}
-                      </Badge>
-                      <button
-                        onClick={() => handleSave(jobId)}
-                        className={cn(
-                          "cursor-pointer transition-colors",
-                          saved.includes(jobId)
-                            ? "text-amber-500"
-                            : "text-gray-300 hover:text-amber-400",
-                        )}
-                      >
-                        <Bookmark
-                          size={18}
-                          fill={saved.includes(jobId) ? "currentColor" : "none"}
-                        />
-                      </button>
+                    <div className="flex flex-wrap gap-4 mt-2 text-xs text-gray-500">
+                      <span className="flex items-center gap-1">
+                        <MapPin size={12} />
+                        {j.location || j.work_location || "Remote"}
+                      </span>
+                      <span className="flex items-center gap-1">
+                        <DollarSign size={12} />
+                        {j.salary_or_stipend ||
+                          j.stipend ||
+                          j.salary ||
+                          j.compensation ||
+                          "Not listed"}
+                      </span>
+                      <span className="flex items-center gap-1">
+                        <Clock size={12} />
+                        Deadline:{" "}
+                        {j.deadline
+                          ? new Date(j.deadline).toLocaleDateString()
+                          : "Rolling"}
+                      </span>
+                      <span className="flex items-center gap-1">
+                        <RefreshCw size={12} />
+                        {j.created_at
+                          ? new Date(j.created_at).toLocaleDateString()
+                          : "Recently posted"}
+                      </span>
+                    </div>
+                    <div className="flex flex-wrap gap-1.5 mt-2">
+                      {tags.map((t) => (
+                        <Badge key={t} color="gray">
+                          {t}
+                        </Badge>
+                      ))}
                     </div>
                   </div>
-                  <div className="flex flex-wrap gap-4 mt-2 text-xs text-gray-500">
-                    <span className="flex items-center gap-1">
-                      <MapPin size={12} />
-                      {j.location || j.work_location || "Remote"}
-                    </span>
-                    <span className="flex items-center gap-1">
-                      <DollarSign size={12} />
-                      {j.stipend || j.salary || j.compensation || "Not listed"}
-                    </span>
-                    <span className="flex items-center gap-1">
-                      <Clock size={12} />
-                      Deadline: {j.deadline || j.application_deadline || "Rolling"}
-                    </span>
-                    <span className="flex items-center gap-1">
-                      <RefreshCw size={12} />
-                      {j.posted || j.created_at || "Recently posted"}
-                    </span>
-                  </div>
-                  <div className="flex flex-wrap gap-1.5 mt-2">
-                    {tags.map((t) => (
-                      <Badge key={t} color="gray">
-                        {t}
-                      </Badge>
-                    ))}
+                  <div className="flex flex-col gap-2 flex-shrink-0">
+                    <Btn
+                      size="sm"
+                      onClick={() => handleApply(jobId)}
+                      disabled={applied.includes(jobId)}
+                    >
+                      {applied.includes(jobId) ? "✓ Applied" : "Apply Now"}
+                    </Btn>
+                    <Btn
+                      size="sm"
+                      variant="outline"
+                      icon={<ExternalLink size={12} />}
+                    >
+                      Details
+                    </Btn>
                   </div>
                 </div>
-                <div className="flex flex-col gap-2 flex-shrink-0">
-                  <Btn
-                    size="sm"
-                    onClick={() => handleApply(jobId)}
-                    disabled={applied.includes(jobId)}
-                  >
-                    {applied.includes(jobId) ? "✓ Applied" : "Apply Now"}
-                  </Btn>
-                  <Btn
-                    size="sm"
-                    variant="outline"
-                    icon={<ExternalLink size={12} />}
-                  >
-                    Details
-                  </Btn>
-                </div>
-              </div>
-            </Card>
+              </Card>
             );
           })}
           {filtered.length === 0 && (
@@ -363,7 +401,9 @@ export default function JobsPage() {
                       <p className="text-sm font-semibold text-gray-900">
                         {j.title || j.job_title || j.role || "Untitled role"}
                       </p>
-                      <p className="text-xs text-gray-500">{j.company || j.company_name || "Company"}</p>
+                      <p className="text-xs text-gray-500">
+                        {j.company || j.company_name || "Company"}
+                      </p>
                     </div>
                     <Badge color="amber">Under Review</Badge>
                   </div>

@@ -1,3 +1,4 @@
+import { createMentorshipRequest } from "../../lib/mentorshipApi";
 import { useEffect, useState } from "react";
 import { getAlumni } from "../../lib/alumniApi";
 import { Users, Search, MapPin, Building, Award, Eye } from "lucide-react";
@@ -21,7 +22,9 @@ function alumniName(person: any) {
 }
 
 function alumniRole(person: any) {
-  return person.headline || person.focus || person.role || person.title || "Mentor";
+  return (
+    person.headline || person.focus || person.role || person.title || "Mentor"
+  );
 }
 
 function alumniSkills(person: any): string[] {
@@ -36,7 +39,11 @@ function alumniSkills(person: any): string[] {
   return [];
 }
 
-export default function DirectoryPage({ navigate }: { navigate: (p: Page) => void }) {
+export default function DirectoryPage({
+  navigate,
+}: {
+  navigate: (p: Page) => void;
+}) {
   const [alumniList, setAlumniList] = useState<any[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
@@ -68,6 +75,26 @@ export default function DirectoryPage({ navigate }: { navigate: (p: Page) => voi
     };
   }, []);
 
+  async function handleConnect(person: any) {
+    if (!person.user_id) {
+      alert("Cannot send mentorship request because this alumni record is missing user_id.");
+      return;
+    }
+
+    try {
+      await createMentorshipRequest({
+        alumni_id: person.user_id,
+        topic: "Mentorship Request",
+        message: "I would like to connect with you for guidance.",
+      });
+
+      alert("Mentorship request sent successfully");
+      navigate("mentorship");
+    } catch (err: any) {
+      alert(err.message || "Failed to send mentorship request");
+    }
+  }
+
   const filtered = alumniList.filter((person) => {
     const name = alumniName(person).toLowerCase();
     const role = alumniRole(person).toLowerCase();
@@ -78,7 +105,11 @@ export default function DirectoryPage({ navigate }: { navigate: (p: Page) => voi
     const query = search.toLowerCase();
 
     return (
-      (query === "" || name.includes(query) || role.includes(query) || company.includes(query) || skills.includes(query)) &&
+      (query === "" ||
+        name.includes(query) ||
+        role.includes(query) ||
+        company.includes(query) ||
+        skills.includes(query)) &&
       (dept === "All" || department === dept) &&
       (industry === "All" || personIndustry === industry)
     );
@@ -105,17 +136,25 @@ export default function DirectoryPage({ navigate }: { navigate: (p: Page) => voi
       <div className="p-6 max-w-6xl mx-auto space-y-6">
         <div className="flex items-center justify-between">
           <div>
-            <h2 className="font-bold text-gray-900 text-xl" style={{ fontFamily: "Poppins, sans-serif" }}>
+            <h2
+              className="font-bold text-gray-900 text-xl"
+              style={{ fontFamily: "Poppins, sans-serif" }}
+            >
               Alumni Directory
             </h2>
-            <p className="text-gray-500 text-sm">{alumniList.length} alumni from your institution</p>
+            <p className="text-gray-500 text-sm">
+              {alumniList.length} alumni from your institution
+            </p>
           </div>
         </div>
 
         <Card className="p-4">
           <div className="flex flex-wrap gap-3">
             <div className="relative flex-1 min-w-56">
-              <Search size={15} className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400" />
+              <Search
+                size={15}
+                className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400"
+              />
               <input
                 value={search}
                 onChange={(e) => setSearch(e.target.value)}
@@ -160,17 +199,26 @@ export default function DirectoryPage({ navigate }: { navigate: (p: Page) => voi
             const skills = alumniSkills(person);
 
             return (
-              <Card key={person.id ?? person.email ?? name} hover className="p-5">
+              <Card
+                key={person.id ?? person.email ?? name}
+                hover
+                className="p-5"
+              >
                 <div className="flex items-start gap-4 mb-4">
                   <Avatar src={person.avatar} name={name} size="lg" />
                   <div className="min-w-0">
-                    <p className="font-bold text-gray-900 truncate" style={{ fontFamily: "Poppins, sans-serif" }}>
+                    <p
+                      className="font-bold text-gray-900 truncate"
+                      style={{ fontFamily: "Poppins, sans-serif" }}
+                    >
                       {name}
                     </p>
                     <p className="text-xs text-gray-600 mt-0.5">{role}</p>
                     <div className="flex items-center gap-1.5 mt-1">
                       <Building size={11} className="text-gray-400" />
-                      <span className="text-xs text-blue-600 font-medium">{company}</span>
+                      <span className="text-xs text-blue-600 font-medium">
+                        {company}
+                      </span>
                     </div>
                   </div>
                 </div>
@@ -181,7 +229,11 @@ export default function DirectoryPage({ navigate }: { navigate: (p: Page) => voi
                   </div>
                   <div className="flex items-center gap-1">
                     <Award size={11} className="text-gray-400" />
-                    <span className="text-xs text-gray-600">{person.experience || person.years_of_experience || "Experience not added"}</span>
+                    <span className="text-xs text-gray-600">
+                      {person.experience ||
+                        person.years_of_experience ||
+                        "Experience not added"}
+                    </span>
                   </div>
                 </div>
                 <div className="flex flex-wrap gap-1.5 mb-4">
@@ -191,14 +243,25 @@ export default function DirectoryPage({ navigate }: { navigate: (p: Page) => voi
                     </Badge>
                   ))}
                   {(person.batch || person.graduation_year) && (
-                    <Badge color="gray">Batch {person.batch || person.graduation_year}</Badge>
+                    <Badge color="gray">
+                      Batch {person.batch || person.graduation_year}
+                    </Badge>
                   )}
                 </div>
                 <div className="flex gap-2">
-                  <Btn size="sm" fullWidth onClick={() => navigate("mentorship")}>
+                  <Btn
+                    size="sm"
+                    fullWidth
+                    onClick={() => handleConnect(person)}
+                  >
                     Connect
                   </Btn>
-                  <Btn size="sm" variant="outline" onClick={() => navigate("profile")} icon={<Eye size={13} />}>
+                  <Btn
+                    size="sm"
+                    variant="outline"
+                    onClick={() => navigate("profile")}
+                    icon={<Eye size={13} />}
+                  >
                     Profile
                   </Btn>
                 </div>
@@ -210,7 +273,9 @@ export default function DirectoryPage({ navigate }: { navigate: (p: Page) => voi
         {filtered.length === 0 && (
           <div className="text-center py-16">
             <Users size={40} className="text-gray-300 mx-auto mb-3" />
-            <p className="text-gray-500">No alumni match your search. Try different filters.</p>
+            <p className="text-gray-500">
+              No alumni match your search. Try different filters.
+            </p>
           </div>
         )}
       </div>

@@ -35,10 +35,46 @@ async function request(endpoint: string, options: RequestInit = {}) {
   const data = await response.json().catch(() => null);
 
   if (!response.ok) {
-    throw new Error(data?.detail || "Something went wrong");
+    throw new Error(formatApiError(data, response.status));
   }
 
   return data;
+}
+
+export function formatApiError(data: any, status: number) {
+  const detail = data?.detail ?? data?.message ?? data?.error;
+
+  if (typeof detail === "string") return detail;
+
+  if (Array.isArray(detail)) {
+    const messages = detail
+      .map((item) => {
+        if (typeof item === "string") return item;
+        if (item?.msg) {
+          const location = Array.isArray(item.loc) ? item.loc.join(".") : item.loc;
+          return location ? `${location}: ${item.msg}` : item.msg;
+        }
+        return safeStringify(item);
+      })
+      .filter(Boolean);
+
+    if (messages.length > 0) return messages.join("\n");
+  }
+
+  if (detail && typeof detail === "object") {
+    if (typeof detail.msg === "string") return detail.msg;
+    return safeStringify(detail);
+  }
+
+  return `Request failed with status ${status}`;
+}
+
+function safeStringify(value: any) {
+  try {
+    return JSON.stringify(value);
+  } catch {
+    return String(value);
+  }
 }
 
 export const api = {

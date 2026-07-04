@@ -1,4 +1,4 @@
-import { api, setToken, removeToken } from "./api";
+import { api, setToken, removeToken, formatApiError } from "./api";
 
 export async function login(email: string, password: string) {
   const formData = new URLSearchParams();
@@ -13,10 +13,10 @@ export async function login(email: string, password: string) {
     body: formData,
   });
 
-  const data = await res.json();
+  const data = await res.json().catch(() => null);
 
   if (!res.ok) {
-    throw new Error(data?.detail || "Login failed");
+    throw new Error(formatApiError(data, res.status));
   }
 
   setToken(data.access_token);
