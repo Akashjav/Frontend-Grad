@@ -2,58 +2,232 @@ import { useState } from "react";
 import { CheckCircle, ChevronLeft } from "lucide-react";
 import type { Page } from "../types";
 import { cn } from "../utils";
-import { alumni } from "../data";
+import { alumniSignup, studentSignup } from "../../lib/authApi";
 import Btn from "./Btn";
 import Card from "./Card";
 
-export default function RegisterPage({ navigate }: { navigate: (p: Page) => void }) {
-  const [role, setRole] = useState<"student" | "alumni">("student");
-  const [step, setStep] = useState(1);
-  const totalSteps = 3;
+type Role = "student" | "alumni";
 
-  const studentFields = [
-    [
-      { label: "Full Name", type: "text", placeholder: "Aryan Kapoor" },
-      { label: "Roll Number", type: "text", placeholder: "21CSE1047" },
-      { label: "Institutional Email", type: "email", placeholder: "aryan@university.edu" },
-      { label: "Password", type: "password", placeholder: "Create a strong password" },
-    ],
-    [
-      { label: "Department", type: "select", options: ["CSE", "IT", "ECE", "ME", "CE", "EEE"] },
-      { label: "Year of Study", type: "select", options: ["1st Year", "2nd Year", "3rd Year", "4th Year"] },
-      { label: "CGPA", type: "text", placeholder: "e.g. 8.5" },
-      { label: "Skills (comma separated)", type: "text", placeholder: "React, Python, DSA..." },
-    ],
-    [
-      { label: "LinkedIn Profile URL", type: "url", placeholder: "https://linkedin.com/in/yourname" },
-      { label: "GitHub URL", type: "url", placeholder: "https://github.com/username" },
-      { label: "Career Goals", type: "textarea", placeholder: "Briefly describe your career objectives..." },
-    ],
-  ];
-  const alumniFields = [
-    [
-      { label: "Full Name", type: "text", placeholder: "Priya Sharma" },
-      { label: "Graduation Year", type: "text", placeholder: "2018" },
-      { label: "Alumni Email", type: "email", placeholder: "priya@gmail.com" },
-      { label: "Password", type: "password", placeholder: "Create a strong password" },
-    ],
-    [
-      { label: "Department", type: "select", options: ["CSE", "IT", "ECE", "ME", "CE", "EEE"] },
-      { label: "Current Company", type: "text", placeholder: "Google" },
-      { label: "Current Role", type: "text", placeholder: "Senior Software Engineer" },
-      { label: "Years of Experience", type: "select", options: ["1-2", "3-5", "6-10", "10+"] },
-    ],
-    [
-      { label: "LinkedIn Profile URL", type: "url", placeholder: "https://linkedin.com/in/yourname" },
-      { label: "Areas of Mentorship (comma separated)", type: "text", placeholder: "DSA, System Design, Resume Review..." },
-      { label: "Availability", type: "select", options: ["Weekends only", "Weekday evenings", "Flexible"] },
-    ],
-  ];
+type RegistrationForm = {
+  full_name: string;
+  email: string;
+  password: string;
+  roll_number: string;
+  department: string;
+  year_of_study: string;
+  cgpa: string;
+  skills: string;
+  linkedin_url: string;
+  github_url: string;
+  career_goals: string;
+  graduation_year: string;
+  current_company: string;
+  current_role: string;
+  years_of_experience: string;
+  mentorship_areas: string;
+  availability: string;
+};
+
+type Field = {
+  name: keyof RegistrationForm;
+  label: string;
+  type: "text" | "email" | "password" | "number" | "select" | "url" | "textarea";
+  placeholder?: string;
+  options?: { label: string; value: string }[];
+};
+
+const initialForm: RegistrationForm = {
+  full_name: "",
+  email: "",
+  password: "",
+  roll_number: "",
+  department: "",
+  year_of_study: "",
+  cgpa: "",
+  skills: "",
+  linkedin_url: "",
+  github_url: "",
+  career_goals: "",
+  graduation_year: "",
+  current_company: "",
+  current_role: "",
+  years_of_experience: "",
+  mentorship_areas: "",
+  availability: "",
+};
+
+const departmentOptions = ["CSE", "IT", "ECE", "ME", "CE", "EEE"].map((value) => ({
+  label: value,
+  value,
+}));
+
+const studentFields: Field[][] = [
+  [
+    { name: "full_name", label: "Full Name", type: "text", placeholder: "Aryan Kapoor" },
+    { name: "roll_number", label: "Roll Number", type: "text", placeholder: "21CSE1047" },
+    { name: "email", label: "Institutional Email", type: "email", placeholder: "aryan@university.edu" },
+    { name: "password", label: "Password", type: "password", placeholder: "Create a strong password" },
+  ],
+  [
+    { name: "department", label: "Department", type: "select", options: departmentOptions },
+    {
+      name: "year_of_study",
+      label: "Year of Study",
+      type: "select",
+      options: [
+        { label: "1st Year", value: "1" },
+        { label: "2nd Year", value: "2" },
+        { label: "3rd Year", value: "3" },
+        { label: "4th Year", value: "4" },
+      ],
+    },
+    { name: "cgpa", label: "CGPA", type: "number", placeholder: "e.g. 8.5" },
+    { name: "skills", label: "Skills (comma separated)", type: "text", placeholder: "React, Python, DSA..." },
+  ],
+  [
+    { name: "linkedin_url", label: "LinkedIn Profile URL", type: "url", placeholder: "https://linkedin.com/in/yourname" },
+    { name: "github_url", label: "GitHub URL", type: "url", placeholder: "https://github.com/username" },
+    { name: "career_goals", label: "Career Goals", type: "textarea", placeholder: "Briefly describe your career objectives..." },
+  ],
+];
+
+const alumniFields: Field[][] = [
+  [
+    { name: "full_name", label: "Full Name", type: "text", placeholder: "Priya Sharma" },
+    { name: "graduation_year", label: "Graduation Year", type: "number", placeholder: "2018" },
+    { name: "email", label: "Alumni Email", type: "email", placeholder: "priya@gmail.com" },
+    { name: "password", label: "Password", type: "password", placeholder: "Create a strong password" },
+  ],
+  [
+    { name: "department", label: "Department", type: "select", options: departmentOptions },
+    { name: "current_company", label: "Current Company", type: "text", placeholder: "Google" },
+    { name: "current_role", label: "Current Role", type: "text", placeholder: "Senior Software Engineer" },
+    {
+      name: "years_of_experience",
+      label: "Years of Experience",
+      type: "select",
+      options: [
+        { label: "1-2", value: "1" },
+        { label: "3-5", value: "3" },
+        { label: "6-10", value: "6" },
+        { label: "10+", value: "10" },
+      ],
+    },
+  ],
+  [
+    { name: "linkedin_url", label: "LinkedIn Profile URL", type: "url", placeholder: "https://linkedin.com/in/yourname" },
+    { name: "mentorship_areas", label: "Areas of Mentorship (comma separated)", type: "text", placeholder: "DSA, System Design, Resume Review..." },
+    {
+      name: "availability",
+      label: "Availability",
+      type: "select",
+      options: [
+        { label: "Weekends only", value: "Weekends only" },
+        { label: "Weekday evenings", value: "Weekday evenings" },
+        { label: "Flexible", value: "Flexible" },
+      ],
+    },
+  ],
+];
+
+function optionalString(value: string) {
+  const trimmed = value.trim();
+  return trimmed || null;
+}
+
+function optionalNumber(value: string) {
+  const trimmed = value.trim();
+  if (!trimmed) return null;
+  const parsed = Number(trimmed);
+  return Number.isFinite(parsed) ? parsed : null;
+}
+
+export default function RegisterPage({ navigate }: { navigate: (p: Page) => void }) {
+  const [role, setRole] = useState<Role>("student");
+  const [step, setStep] = useState(1);
+  const [form, setForm] = useState<RegistrationForm>(initialForm);
+  const [registering, setRegistering] = useState(false);
+  const totalSteps = 3;
 
   const fields = role === "student" ? studentFields[step - 1] : alumniFields[step - 1];
   const stepLabels = role === "student"
     ? ["Personal Info", "Academic Details", "Profile & Goals"]
     : ["Personal Info", "Professional Details", "Mentorship Preferences"];
+
+  function updateField(name: keyof RegistrationForm, value: string) {
+    setForm((current) => ({ ...current, [name]: value }));
+  }
+
+  function switchRole(nextRole: Role) {
+    setRole(nextRole);
+    setStep(1);
+    setForm(initialForm);
+  }
+
+  function validateCurrentStep() {
+    if (step !== 1) return true;
+
+    if (!form.full_name.trim() || !form.email.trim() || !form.password.trim()) {
+      alert("Please enter your name, email, and password.");
+      return false;
+    }
+
+    return true;
+  }
+
+  async function completeRegistration() {
+    setRegistering(true);
+
+    try {
+      if (role === "student") {
+        await studentSignup({
+          email: form.email.trim(),
+          password: form.password,
+          full_name: form.full_name.trim(),
+          roll_number: optionalString(form.roll_number),
+          department: optionalString(form.department),
+          year_of_study: optionalNumber(form.year_of_study),
+          cgpa: optionalNumber(form.cgpa),
+          skills: optionalString(form.skills),
+          linkedin_url: optionalString(form.linkedin_url),
+          github_url: optionalString(form.github_url),
+          career_goals: optionalString(form.career_goals),
+        });
+        navigate("student-dashboard");
+        return;
+      }
+
+      await alumniSignup({
+        email: form.email.trim(),
+        password: form.password,
+        full_name: form.full_name.trim(),
+        graduation_year: optionalNumber(form.graduation_year),
+        department: optionalString(form.department),
+        current_company: optionalString(form.current_company),
+        current_role: optionalString(form.current_role),
+        years_of_experience: optionalNumber(form.years_of_experience),
+        linkedin_url: optionalString(form.linkedin_url),
+        mentorship_areas: optionalString(form.mentorship_areas),
+        availability: optionalString(form.availability),
+      });
+      navigate("alumni-dashboard");
+    } catch (err: any) {
+      alert(err.message || "Failed to complete registration");
+    } finally {
+      setRegistering(false);
+    }
+  }
+
+  async function handleNext() {
+    if (!validateCurrentStep()) return;
+
+    if (step < totalSteps) {
+      setStep((current) => current + 1);
+      return;
+    }
+
+    await completeRegistration();
+  }
 
   return (
     <div className="min-h-[calc(100vh-64px)] bg-slate-50 flex items-center justify-center py-10 px-4">
@@ -67,7 +241,7 @@ export default function RegisterPage({ navigate }: { navigate: (p: Page) => void
           {/* Role toggle */}
           <div className="flex rounded-lg bg-gray-100 p-1 mb-7">
             {(["student", "alumni"] as const).map(r => (
-              <button key={r} onClick={() => { setRole(r); setStep(1); }}
+              <button key={r} onClick={() => switchRole(r)}
                 className={cn("flex-1 py-2.5 text-sm font-semibold rounded-md transition-all cursor-pointer",
                   role === r ? "bg-white text-blue-700 shadow-sm" : "text-gray-500 hover:text-gray-700")}>
                 {r === "student" ? "I'm a Student" : "I'm an Alumni"}
@@ -97,15 +271,29 @@ export default function RegisterPage({ navigate }: { navigate: (p: Page) => void
               <div key={f.label}>
                 <label className="block text-sm font-medium text-gray-700 mb-1">{f.label}</label>
                 {f.type === "select" ? (
-                  <select className="w-full border border-gray-200 rounded-lg px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 bg-slate-50">
+                  <select
+                    value={form[f.name]}
+                    onChange={(e) => updateField(f.name, e.target.value)}
+                    className="w-full border border-gray-200 rounded-lg px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 bg-slate-50"
+                  >
                     <option value="">Select {f.label}</option>
-                    {f.options?.map(o => <option key={o}>{o}</option>)}
+                    {f.options?.map(o => <option key={o.value} value={o.value}>{o.label}</option>)}
                   </select>
                 ) : f.type === "textarea" ? (
-                  <textarea rows={3} placeholder={f.placeholder}
+                  <textarea
+                    rows={3}
+                    placeholder={f.placeholder}
+                    value={form[f.name]}
+                    onChange={(e) => updateField(f.name, e.target.value)}
                     className="w-full border border-gray-200 rounded-lg px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 bg-slate-50 resize-none" />
                 ) : (
-                  <input type={f.type} placeholder={f.placeholder}
+                  <input
+                    type={f.type}
+                    placeholder={f.placeholder}
+                    value={form[f.name]}
+                    min={f.type === "number" ? "0" : undefined}
+                    step={f.name === "cgpa" ? "0.1" : undefined}
+                    onChange={(e) => updateField(f.name, e.target.value)}
                     className="w-full border border-gray-200 rounded-lg px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 bg-slate-50" />
                 )}
               </div>
@@ -114,9 +302,9 @@ export default function RegisterPage({ navigate }: { navigate: (p: Page) => void
 
           {/* Navigation */}
           <div className="flex gap-3">
-            {step > 1 && <Btn variant="outline" onClick={() => setStep(s => s - 1)} icon={<ChevronLeft size={16} />}>Back</Btn>}
-            <Btn fullWidth onClick={() => step < totalSteps ? setStep(s => s + 1) : navigate("student-dashboard")}>
-              {step < totalSteps ? "Continue" : "Complete Registration"}
+            {step > 1 && <Btn variant="outline" onClick={() => setStep(s => s - 1)} icon={<ChevronLeft size={16} />} disabled={registering}>Back</Btn>}
+            <Btn fullWidth onClick={handleNext} disabled={registering}>
+              {registering ? "Creating Account..." : step < totalSteps ? "Continue" : "Complete Registration"}
             </Btn>
           </div>
 
@@ -128,4 +316,3 @@ export default function RegisterPage({ navigate }: { navigate: (p: Page) => void
     </div>
   );
 }
-
