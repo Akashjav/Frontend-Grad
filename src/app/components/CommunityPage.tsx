@@ -23,6 +23,8 @@ import Badge from "./Badge";
 import Btn from "./Btn";
 import Card from "./Card";
 import Avatar from "./Avatar";
+import { useAuth } from "../AuthContext";
+import { userName } from "../../lib/currentUser";
 
 const TEST_COMMUNITY_NUMBER = "1";
 
@@ -115,6 +117,7 @@ function ignoreAlreadyJoined(error: any) {
 }
 
 export default function CommunityPage() {
+  const { user } = useAuth();
   const [activePost, setActivePost] = useState<null | number>(null);
   const [newPost, setNewPost] = useState(false);
   const [replyText, setReplyText] = useState("");
@@ -445,7 +448,7 @@ export default function CommunityPage() {
                           </div>
                         ))}
                         <div className="flex gap-3 mt-3">
-                          <Avatar name="Aryan Kapoor" size="sm" />
+                          <Avatar name={userName(user)} size="sm" />
                           <div className="flex-1 flex gap-2">
                             <input
                               value={replyText}

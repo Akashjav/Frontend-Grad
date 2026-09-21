@@ -1,0 +1,572 @@
+[
+  {
+    "key": "POST /api/admin/alumni-payouts",
+    "payload": {
+      "alumni_id": "Example value"
+    }
+  },
+  {
+    "key": "POST /api/ai-chat/",
+    "payload": {
+      "prompt": "Example value"
+    }
+  },
+  {
+    "key": "POST /api/alumni/",
+    "payload": {
+      "focus": "Example value",
+      "chapter": "Example value",
+      "availability": "Example value",
+      "response_time": "Example value",
+      "current_project": "Example value",
+      "impact": "Example value"
+    }
+  },
+  {
+    "key": "POST /api/domains",
+    "payload": {
+      "name": "Example value"
+    }
+  },
+  {
+    "key": "POST /api/jobs/",
+    "payload": {
+      "title": "Example value",
+      "company": "Example value",
+      "job_type": "Example value",
+      "description": "Example value"
+    }
+  },
+  {
+    "key": "POST /api/subscription-plans",
+    "payload": {
+      "domain_id": 1,
+      "name": "Example value",
+      "duration_months": 1,
+      "price": 1
+    }
+  },
+  {
+    "key": "POST /api/subscriptions/start-trial",
+    "payload": {
+      "domain_id": 1
+    }
+  },
+  {
+    "key": "POST /api/v1/admin/taxonomy/import",
+    "payload": [
+      {
+        "name": "Example value",
+        "domain_id": 1
+      }
+    ]
+  },
+  {
+    "key": "PATCH /api/v1/admin/users/{user_id}/institution",
+    "payload": {
+      "institution_id": 1
+    }
+  },
+  {
+    "key": "PATCH /api/v1/admin/users/{user_id}/role",
+    "payload": {
+      "role": "student"
+    }
+  },
+  {
+    "key": "POST /api/v1/admin/users/{user_id}/skills/verify",
+    "payload": {
+      "skill_id": 1
+    }
+  },
+  {
+    "key": "POST /api/v1/ai/career-assistant",
+    "payload": {
+      "text": "Example value"
+    }
+  },
+  {
+    "key": "POST /api/v1/ai/opportunity/extract",
+    "payload": {
+      "text": "Example value"
+    }
+  },
+  {
+    "key": "POST /api/v1/ai/resume/extract",
+    "payload": {
+      "document_id": 1
+    }
+  },
+  {
+    "key": "POST /api/v1/ai/resume/map-skills",
+    "payload": {
+      "document_id": 1
+    }
+  },
+  {
+    "key": "PATCH /api/v1/alumni/me/profile",
+    "payload": {}
+  },
+  {
+    "key": "POST /api/v1/applications/{application_id}/feedback",
+    "payload": {
+      "scores": {
+        "1": 1
+      },
+      "comment": "Example value"
+    }
+  },
+  {
+    "key": "PATCH /api/v1/applications/{application_id}/progress",
+    "payload": {
+      "progress": 1
+    }
+  },
+  {
+    "key": "PATCH /api/v1/applications/{application_id}/status",
+    "payload": {
+      "status": "shortlisted"
+    }
+  },
+  {
+    "key": "POST /api/v1/assessments",
+    "payload": {
+      "domain_id": 1,
+      "title": "Example value",
+      "questions": [
+        {
+          "id": "Example value",
+          "prompt": "Example value",
+          "options": [
+            "Example value",
+            "Example value"
+          ],
+          "answer": 0,
+          "skill_id": 1
+        }
+      ]
+    }
+  },
+  {
+    "key": "PATCH /api/v1/auth/me",
+    "payload": {}
+  },
+  {
+    "key": "POST /api/v1/certificates/{certificate_id}/revoke",
+    "payload": {
+      "reason": "Example value"
+    }
+  },
+  {
+    "key": "POST /api/v1/collaborations",
+    "payload": {
+      "opportunity_id": 1,
+      "title": "Example value"
+    }
+  },
+  {
+    "key": "PATCH /api/v1/collaborations/{collaboration_id}",
+    "payload": {
+      "progress": 1
+    }
+  },
+  {
+    "key": "POST /api/v1/collaborations/{collaboration_id}/feedback",
+    "payload": {
+      "scores": {
+        "1": 1
+      },
+      "comment": "Example value"
+    }
+  },
+  {
+    "key": "POST /api/v1/collaborations/{collaboration_id}/invite",
+    "payload": {
+      "user_id": "Example value"
+    }
+  },
+  {
+    "key": "POST /api/v1/collaborations/{collaboration_id}/members",
+    "payload": {
+      "user_id": "Example value"
+    }
+  },
+  {
+    "key": "POST /api/v1/collaborations/{collaboration_id}/milestones",
+    "payload": {
+      "title": "Example value"
+    }
+  },
+  {
+    "key": "POST /api/v1/communities",
+    "payload": {
+      "name": "Example value",
+      "category": "Example value",
+      "blurb": "Example value"
+    }
+  },
+  {
+    "key": "POST /api/v1/communities/{community_id}/posts",
+    "payload": {
+      "title": "Example value",
+      "body": "Example value"
+    }
+  },
+  {
+    "key": "POST /api/v1/community-posts/{post_id}/replies",
+    "payload": {
+      "body": "Example value"
+    }
+  },
+  {
+    "key": "POST /api/v1/competencies",
+    "payload": {
+      "name": "Example value",
+      "domain_id": 1,
+      "skill_weights": {
+        "1": 1
+      }
+    }
+  },
+  {
+    "key": "POST /api/v1/conversations",
+    "payload": {
+      "other_user_id": "00000000-0000-4000-8000-000000000001"
+    }
+  },
+  {
+    "key": "POST /api/v1/conversations/{conversation_id}/messages",
+    "payload": {
+      "body": "Example value"
+    }
+  },
+  {
+    "key": "POST /api/v1/disciplines",
+    "payload": {
+      "name": "Example value",
+      "domain_id": 1
+    }
+  },
+  {
+    "key": "POST /api/v1/domains",
+    "payload": {
+      "name": "Example value"
+    }
+  },
+  {
+    "key": "PATCH /api/v1/domains/{domain_id}",
+    "payload": {
+      "name": "Example value"
+    }
+  },
+  {
+    "key": "PUT /api/v1/domains/{domain_id}/weights",
+    "payload": {
+      "readiness_weights": {
+        "1": 1
+      },
+      "matching_weights": {
+        "skill": 0.4,
+        "core": 0.25,
+        "project": 0.15,
+        "interest": 0.1,
+        "eligibility": 0.1
+      }
+    }
+  },
+  {
+    "key": "POST /api/v1/events",
+    "payload": {
+      "title": "Example value",
+      "starts_at": "2027-01-01T12:00:00.000Z",
+      "location": "Example value",
+      "event_type": "Example value",
+      "description": "Example value",
+      "capacity": 1
+    }
+  },
+  {
+    "key": "POST /api/v1/faculty/consultancy",
+    "payload": {
+      "domain_id": 1,
+      "title": "Example value",
+      "description": "Example value"
+    }
+  },
+  {
+    "key": "PATCH /api/v1/faculty/consultancy/{item_id}",
+    "payload": {}
+  },
+  {
+    "key": "POST /api/v1/faculty/fdp",
+    "payload": {
+      "domain_id": 1,
+      "title": "Example value",
+      "description": "Example value"
+    }
+  },
+  {
+    "key": "PATCH /api/v1/faculty/fdp/{item_id}",
+    "payload": {}
+  },
+  {
+    "key": "PATCH /api/v1/faculty/me/profile",
+    "payload": {}
+  },
+  {
+    "key": "PATCH /api/v1/industry/me/profile",
+    "payload": {}
+  },
+  {
+    "key": "POST /api/v1/industry/profile",
+    "payload": {}
+  },
+  {
+    "key": "POST /api/v1/institutions",
+    "payload": {
+      "name": "Example value"
+    }
+  },
+  {
+    "key": "PATCH /api/v1/institutions/me/profile",
+    "payload": {
+      "name": "Example value"
+    }
+  },
+  {
+    "key": "POST /api/v1/institutions/me/training-programs",
+    "payload": {
+      "title": "Example value",
+      "skill_ids": [
+        1
+      ]
+    }
+  },
+  {
+    "key": "PATCH /api/v1/institutions/me/training-programs/{program_id}",
+    "payload": {
+      "status": "open"
+    }
+  },
+  {
+    "key": "POST /api/v1/learning/resources",
+    "payload": {
+      "skill_id": 1,
+      "title": "Example value",
+      "url": "https://example.com/resource"
+    }
+  },
+  {
+    "key": "POST /api/v1/mentorship/requests",
+    "payload": {
+      "alumni_id": "Example value",
+      "topic": "Example value"
+    }
+  },
+  {
+    "key": "PATCH /api/v1/mentorship/requests/{request_id}",
+    "payload": {
+      "status": "accepted"
+    }
+  },
+  {
+    "key": "POST /api/v1/mentorship/sessions",
+    "payload": {
+      "request_id": 1,
+      "scheduled_at": "2027-01-01T12:00:00.000Z"
+    }
+  },
+  {
+    "key": "POST /api/v1/mentorship/sessions/{session_id}/feedback",
+    "payload": {
+      "rating": 1,
+      "comment": "Example value"
+    }
+  },
+  {
+    "key": "POST /api/v1/milestones/{milestone_id}/review",
+    "payload": {
+      "status": "accepted",
+      "review_note": "Example value"
+    }
+  },
+  {
+    "key": "POST /api/v1/milestones/{milestone_id}/submit",
+    "payload": {
+      "evidence_url": "https://example.com/resource",
+      "submission_note": "Example value"
+    }
+  },
+  {
+    "key": "POST /api/v1/notifications",
+    "payload": {
+      "user_id": "00000000-0000-4000-8000-000000000001",
+      "kind": "Example value",
+      "title": "Example value",
+      "body": "Example value"
+    }
+  },
+  {
+    "key": "POST /api/v1/opportunities",
+    "payload": {
+      "domain_id": 1,
+      "title": "Example value",
+      "description": "Example value"
+    }
+  },
+  {
+    "key": "PATCH /api/v1/opportunities/{opportunity_id}",
+    "payload": {}
+  },
+  {
+    "key": "POST /api/v1/opportunities/{opportunity_id}/requirements",
+    "payload": {
+      "skill_id": 1,
+      "level": 1
+    }
+  },
+  {
+    "key": "PATCH /api/v1/opportunities/{opportunity_id}/requirements/{requirement_id}",
+    "payload": {
+      "skill_id": 1,
+      "level": 1
+    }
+  },
+  {
+    "key": "POST /api/v1/practical-assessments",
+    "payload": {
+      "domain_id": 1,
+      "title": "Example value",
+      "instructions": "Example value",
+      "rubric": {
+        "1": "Example value"
+      }
+    }
+  },
+  {
+    "key": "POST /api/v1/practical-assessments/{practical_id}/submit",
+    "payload": {
+      "evidence_url": "https://example.com/resource",
+      "note": "Example value"
+    }
+  },
+  {
+    "key": "POST /api/v1/practical-submissions/{submission_id}/review",
+    "payload": {
+      "scores": {
+        "1": 1
+      },
+      "feedback": "Example value"
+    }
+  },
+  {
+    "key": "POST /api/v1/projects",
+    "payload": {
+      "domain_id": 1,
+      "title": "Example value",
+      "description": "Example value"
+    }
+  },
+  {
+    "key": "PATCH /api/v1/projects/{item_id}",
+    "payload": {}
+  },
+  {
+    "key": "POST /api/v1/projects/{project_id}/members",
+    "payload": {
+      "user_id": "Example value"
+    }
+  },
+  {
+    "key": "POST /api/v1/projects/{project_id}/mentor",
+    "payload": {
+      "user_id": "Example value"
+    }
+  },
+  {
+    "key": "POST /api/v1/research",
+    "payload": {
+      "domain_id": 1,
+      "title": "Example value",
+      "description": "Example value"
+    }
+  },
+  {
+    "key": "PATCH /api/v1/research/{item_id}",
+    "payload": {}
+  },
+  {
+    "key": "PATCH /api/v1/settings/account",
+    "payload": {}
+  },
+  {
+    "key": "PATCH /api/v1/settings/language",
+    "payload": {
+      "language": "Example value"
+    }
+  },
+  {
+    "key": "PATCH /api/v1/settings/notifications",
+    "payload": {}
+  },
+  {
+    "key": "PATCH /api/v1/settings/privacy",
+    "payload": {}
+  },
+  {
+    "key": "PATCH /api/v1/settings/security",
+    "payload": {}
+  },
+  {
+    "key": "POST /api/v1/skills",
+    "payload": {
+      "name": "Example value",
+      "domain_id": 1
+    }
+  },
+  {
+    "key": "PATCH /api/v1/skills/{skill_id}",
+    "payload": {
+      "name": "Example value",
+      "domain_id": 1
+    }
+  },
+  {
+    "key": "POST /api/v1/students/me/education",
+    "payload": {
+      "title": "Example value"
+    }
+  },
+  {
+    "key": "PATCH /api/v1/students/me/education/{item_id}",
+    "payload": {
+      "title": "Example value"
+    }
+  },
+  {
+    "key": "POST /api/v1/students/me/portfolio",
+    "payload": {
+      "title": "Example value"
+    }
+  },
+  {
+    "key": "PATCH /api/v1/students/me/portfolio/{item_id}",
+    "payload": {
+      "title": "Example value"
+    }
+  },
+  {
+    "key": "PATCH /api/v1/students/me/profile",
+    "payload": {}
+  },
+  {
+    "key": "PUT /api/v1/students/me/skills",
+    "payload": {
+      "skills": [
+        {
+          "skill_id": 1
+        }
+      ]
+    }
+  }
+]

@@ -1,13 +1,15 @@
 import { Bell, Star, Heart, Video, Plus, Edit3 } from "lucide-react";
 import type { Page } from "../types";
 import { cn } from "../utils";
-import { alumni } from "../data";
+import { useAuth } from "../AuthContext";
+import { userName, userSubtitle } from "../../lib/currentUser";
 import Badge from "./Badge";
 import Btn from "./Btn";
 import Card from "./Card";
 import Avatar from "./Avatar";
 
 export default function AlumniDashboard({ navigate }: { navigate: (p: Page) => void }) {
+  const { user } = useAuth();
   const pendingRequests = [
     { student: "Aryan Kapoor", dept: "CSE, 3rd Year", topic: "FAANG Interview Prep", time: "2 hours ago" },
     { student: "Meera Patel", dept: "IT, 4th Year", topic: "Resume Review + LinkedIn", time: "5 hours ago" },
@@ -24,16 +26,16 @@ export default function AlumniDashboard({ navigate }: { navigate: (p: Page) => v
         {/* Profile Overview */}
         <Card className="p-6">
           <div className="flex items-start gap-5">
-            <img src={alumni[0].avatar} alt="Priya Sharma" className="w-16 h-16 rounded-xl object-cover bg-blue-100" />
+            <Avatar name={userName(user)} size="lg" />
             <div className="flex-1">
               <div className="flex items-start justify-between">
                 <div>
-                  <h2 className="font-bold text-gray-900 text-xl" style={{ fontFamily: "Poppins, sans-serif" }}>Priya Sharma</h2>
-                  <p className="text-gray-600 text-sm">Senior Software Engineer · Google</p>
+                  <h2 className="font-bold text-gray-900 text-xl" style={{ fontFamily: "Poppins, sans-serif" }}>{userName(user)}</h2>
+                  <p className="text-gray-600 text-sm">{userSubtitle(user)}</p>
                   <div className="flex flex-wrap gap-2 mt-2">
-                    <Badge color="blue">Batch 2018</Badge>
-                    <Badge color="teal">CSE</Badge>
-                    <Badge color="green">Available for Mentorship</Badge>
+                    {user?.alumni_profile?.graduation_year && <Badge color="blue">Batch {user.alumni_profile.graduation_year}</Badge>}
+                    {user?.alumni_profile?.department && <Badge color="teal">{user.alumni_profile.department}</Badge>}
+                    {user?.alumni_profile?.availability && <Badge color="green">{user.alumni_profile.availability}</Badge>}
                   </div>
                 </div>
                 <Btn size="sm" variant="outline" onClick={() => navigate("profile")} icon={<Edit3 size={14} />}>Edit Profile</Btn>

@@ -9,6 +9,9 @@ import type { Page } from "../types";
 import { cn } from "../utils";
 import Btn from "./Btn";
 import Avatar from "./Avatar";
+import { useAuth } from "../AuthContext";
+import { userName } from "../../lib/currentUser";
+import { dashboardPageForRole } from "../../lib/roleRedirect";
 
 export default function Navbar({
   current,
@@ -20,9 +23,17 @@ export default function Navbar({
   const [open, setOpen] = useState(false);
   const [notify, setNotify] = useState(false);
   const [notifications, setNotifications] = useState<any[]>([]);
+  const { user, signOut } = useAuth();
+  const homePage: Page = user ? dashboardPageForRole(user.role) : "landing";
 
-  const links: { label: string; page: Page }[] = [
-    { label: "Home", page: "landing" },
+  const links: { label: string; page: Page }[] = user?.role === "industry" ? [
+    { label: "Home", page: "industry-dashboard" },
+    { label: "Opportunities", page: "industry-opportunities" },
+    { label: "Applications", page: "industry-applications" },
+    { label: "Matches", page: "industry-matches" },
+    { label: "Company", page: "industry-profile" },
+  ] : [
+    { label: "Home", page: homePage },
     { label: "Directory", page: "directory" },
     { label: "Mentorship", page: "mentorship" },
     { label: "Events", page: "events" },
@@ -30,17 +41,22 @@ export default function Navbar({
     { label: "Community", page: "community" },
   ];
 
-  const isLoggedIn = !["landing", "login", "register"].includes(current);
+  const isLoggedIn = Boolean(user);
+  if (user) links.unshift({ label: "Workspace", page: "workspace" });
   useEffect(() => {
+    let active = true;
+    setNotifications([]);
+    setNotify(false);
     if (isLoggedIn) {
-      loadNotifications();
+      getNotifications().then(data => { if (active) setNotifications(Array.isArray(data) ? data : []); }).catch(console.error);
     }
-  }, [isLoggedIn]);
+    return () => { active = false; };
+  }, [isLoggedIn, user?.id, user?.email]);
 
   async function loadNotifications() {
     try {
       const data = await getNotifications();
-      setNotifications(data);
+      setNotifications(Array.isArray(data) ? data : []);
     } catch (err) {
       console.error(err);
     }
@@ -54,7 +70,7 @@ export default function Navbar({
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <button
-            onClick={() => navigate("landing")}
+            onClick={() => navigate(homePage)}
             className="flex items-center gap-2.5 cursor-pointer"
           >
             <div className="w-8 h-8 rounded-lg bg-blue-600 flex items-center justify-center flex-shrink-0">
@@ -91,6 +107,7 @@ export default function Navbar({
             {isLoggedIn ? (
               <>
                 <button
+                  aria-label="Notifications"
                   onClick={() => setNotify(!notify)}
                   className="relative p-2 rounded-lg text-gray-500 hover:text-gray-700 hover:bg-gray-100 transition-colors cursor-pointer"
                 >
@@ -163,20 +180,22 @@ export default function Navbar({
                 )}
                 <button
                   onClick={() => navigate("ai-assistant")}
+                  aria-label="AI Assistant"
                   className="p-2 rounded-lg text-gray-500 hover:text-blue-600 hover:bg-blue-50 transition-colors cursor-pointer"
                 >
                   <Bot size={18} />
                 </button>
-                <div
+                <button
+                  aria-label={`Open profile for ${userName(user)}`}
                   className="flex items-center gap-2 pl-2 cursor-pointer"
                   onClick={() => navigate("profile")}
                 >
-                  <Avatar name="Aryan Kapoor" size="sm" />
+                  <Avatar name={userName(user)} size="sm" />
                   <ChevronDown
                     size={14}
                     className="text-gray-400 hidden sm:block"
                   />
-                </div>
+                </button>
               </>
             ) : (
               <>
@@ -199,6 +218,8 @@ export default function Navbar({
             {/* Mobile menu */}
             <button
               onClick={() => setOpen(!open)}
+              aria-label="Toggle navigation"
+              aria-expanded={open}
               className="lg:hidden p-2 rounded-lg text-gray-600 hover:bg-gray-100 cursor-pointer"
             >
               {open ? <X size={20} /> : <Menu size={20} />}
@@ -222,6 +243,10 @@ export default function Navbar({
               </button>
             ))}
             <div className="flex gap-2 pt-2">
+              {isLoggedIn ? <>
+                <Btn variant="outline" size="sm" onClick={() => { navigate("profile"); setOpen(false); }}>My Profile</Btn>
+                <Btn variant="ghost" size="sm" onClick={() => { signOut(); navigate("landing"); setOpen(false); }}>Sign Out</Btn>
+              </> : <>
               <Btn
                 variant="outline"
                 size="sm"
@@ -242,6 +267,7 @@ export default function Navbar({
               >
                 Register
               </Btn>
+              </>}
             </div>
           </div>
         )}

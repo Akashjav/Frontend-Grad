@@ -14,8 +14,11 @@ import {
 import { cn } from "../utils";
 import Btn from "./Btn";
 import Avatar from "./Avatar";
+import { useAuth } from "../AuthContext";
+import { userName } from "../../lib/currentUser";
 
 export default function AIAssistantPage() {
+  const { user } = useAuth();
   const [messages, setMessages] = useState<
     { role: "user" | "ai"; text: string; time: string }[]
   >([
@@ -222,7 +225,7 @@ export default function AIAssistantPage() {
                 <Bot size={16} className="text-white" />
               </div>
             ) : (
-              <Avatar name="Aryan Kapoor" size="sm" />
+              <Avatar name={userName(user)} size="sm" />
             )}
             <div
               className={cn(

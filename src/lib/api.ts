@@ -1,23 +1,25 @@
-const API_URL = import.meta.env.VITE_API_URL || "http://127.0.0.1:8000";
+export const API_URL = (import.meta.env.VITE_API_URL || "http://127.0.0.1:8000").replace(/\/+$/, "");
 
 export function getToken() {
   return localStorage.getItem("access_token");
 }
 
-export function setToken(token: string) {
+export function setToken(token: string, version: "legacy" | "v1" = "legacy") {
+  localStorage.removeItem("refresh_token");
+  localStorage.setItem("auth_api", version);
   localStorage.setItem("access_token", token);
 }
 
 export function removeToken() {
+  localStorage.removeItem("refresh_token");
   localStorage.removeItem("access_token");
+  localStorage.removeItem("auth_api");
 }
 
-async function request(endpoint: string, options: RequestInit = {}) {
+export async function request(endpoint: string, options: RequestInit = {}) {
   const token = getToken();
 
-  const headers: HeadersInit = {
-    ...(options.headers || {}),
-  };
+  const headers: Record<string, string> = Object.fromEntries(new Headers(options.headers).entries());
 
   if (!(options.body instanceof FormData)) {
     headers["Content-Type"] = "application/json";
@@ -35,6 +37,10 @@ async function request(endpoint: string, options: RequestInit = {}) {
   const data = await response.json().catch(() => null);
 
   if (!response.ok) {
+    if (response.status === 401 && token && token === getToken()) {
+      removeToken();
+      window.dispatchEvent(new Event("auth:expired"));
+    }
     throw new Error(formatApiError(data, response.status));
   }
 
@@ -94,6 +100,8 @@ export const api = {
       method: "PATCH",
       body: JSON.stringify(body),
     }),
+
+  put: (endpoint: string, body?: any) => request(endpoint, { method: "PUT", body: JSON.stringify(body) }),
 
   delete: (endpoint: string) =>
     request(endpoint, {

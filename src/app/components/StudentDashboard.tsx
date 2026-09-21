@@ -1,4 +1,6 @@
 import { useEffect, useState } from "react";
+import { useAuth } from "../AuthContext";
+import { userName } from "../../lib/currentUser";
 import {
   Award,
   Bell,
@@ -36,6 +38,7 @@ function formatDate(value?: string) {
 }
 
 export default function StudentDashboard({ navigate }: { navigate: (p: Page) => void }) {
+  const { user } = useAuth();
   const [dashboard, setDashboard] = useState<any>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
@@ -88,7 +91,7 @@ export default function StudentDashboard({ navigate }: { navigate: (p: Page) => 
   const alumni = asArray(dashboard?.recommended_alumni ?? dashboard?.alumni);
   const opportunities = asArray(dashboard?.recommended_jobs ?? dashboard?.jobs?.recommended ?? dashboard?.jobs?.items);
   const profileScore = dashboard?.profile_score ?? dashboard?.profile?.score ?? 0;
-  const studentName = dashboard?.student?.name ?? dashboard?.user?.name ?? "Student";
+  const studentName = userName(user);
   const subscriptionStatus = dashboard?.subscription?.status ?? "Unknown";
 
   return (

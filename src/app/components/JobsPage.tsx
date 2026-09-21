@@ -343,7 +343,7 @@ export default function JobsPage() {
                       </span>
                     </div>
                     <div className="flex flex-wrap gap-1.5 mt-2">
-                      {tags.map((t) => (
+                      {tags.map((t: string) => (
                         <Badge key={t} color="gray">
                           {t}
                         </Badge>

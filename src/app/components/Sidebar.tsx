@@ -2,8 +2,11 @@ import { Users, Briefcase, Calendar, MessageSquare, BookOpen, Home, Settings, Lo
 import type { Page } from "../types";
 import { cn } from "../utils";
 import Avatar from "./Avatar";
+import { useAuth } from "../AuthContext";
+import { userName, userSubtitle, type UserRole } from "../../lib/currentUser";
 
-export default function Sidebar({ role, navigate, current }: { role: "student" | "alumni" | "admin"; navigate: (p: Page) => void; current: Page }) {
+export default function Sidebar({ role, navigate, current }: { role: UserRole; navigate: (p: Page) => void; current: Page }) {
+  const { user, signOut } = useAuth();
   const studentLinks = [
     { icon: <Home size={18} />, label: "Dashboard", page: "student-dashboard" as Page },
     { icon: <Users size={18} />, label: "Alumni Directory", page: "directory" as Page },
@@ -28,12 +31,20 @@ export default function Sidebar({ role, navigate, current }: { role: "student" |
     { icon: <Briefcase size={18} />, label: "Jobs", page: "jobs" as Page },
     { icon: <MessageSquare size={18} />, label: "Community", page: "community" as Page },
   ];
-  const links = role === "student" ? studentLinks : role === "alumni" ? alumniLinks : adminLinks;
-  const name = role === "student" ? "Aryan Kapoor" : role === "alumni" ? "Priya Sharma" : "Dr. Ramesh Kumar";
-  const subtitle = role === "student" ? "CSE, 3rd Year" : role === "alumni" ? "Google · Sr. Engineer" : "Admin";
+  const industryLinks = [
+    { icon: <Home size={18} />, label: "Dashboard", page: "industry-dashboard" as Page },
+    { icon: <Briefcase size={18} />, label: "Opportunities", page: "industry-opportunities" as Page },
+    { icon: <Users size={18} />, label: "Applications", page: "industry-applications" as Page },
+    { icon: <BookOpen size={18} />, label: "Candidate matches", page: "industry-matches" as Page },
+    { icon: <Settings size={18} />, label: "Company profile", page: "industry-profile" as Page },
+  ];
+  const links = role === "industry" ? industryLinks : role === "student" ? studentLinks : role === "alumni" ? alumniLinks : role === "admin" ? adminLinks : [];
+  links.unshift({ icon: <BookOpen size={18} />, label: "All workspace pages", page: "workspace" as Page });
+  const name = userName(user);
+  const subtitle = userSubtitle(user);
 
   return (
-    <aside className="w-60 flex-shrink-0 bg-white border-r border-gray-200 flex flex-col h-[calc(100vh-64px)] sticky top-16 overflow-y-auto">
+    <aside className="hidden lg:flex w-60 flex-shrink-0 bg-white border-r border-gray-200 flex-col h-[calc(100vh-64px)] sticky top-16 overflow-y-auto">
       {/* Profile */}
       <div className="p-4 border-b border-gray-100">
         <div className="flex items-center gap-3">
@@ -60,7 +71,7 @@ export default function Sidebar({ role, navigate, current }: { role: "student" |
         <button onClick={() => navigate("profile")} className="w-full flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm text-gray-600 hover:text-gray-900 hover:bg-gray-50 transition-colors cursor-pointer">
           <Settings size={18} /> Settings
         </button>
-        <button onClick={() => navigate("landing")} className="w-full flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm text-gray-600 hover:text-red-600 hover:bg-red-50 transition-colors cursor-pointer">
+        <button onClick={() => { signOut(); navigate("landing"); }} className="w-full flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm text-gray-600 hover:text-red-600 hover:bg-red-50 transition-colors cursor-pointer">
           <LogOut size={18} /> Sign Out
         </button>
       </div>

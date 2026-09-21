@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useAuth } from "../AuthContext";
 import { CheckCircle, ChevronLeft } from "lucide-react";
 import type { Page } from "../types";
 import { cn } from "../utils";
@@ -143,6 +144,7 @@ function optionalNumber(value: string) {
 }
 
 export default function RegisterPage({ navigate }: { navigate: (p: Page) => void }) {
+  const { refreshUser, signOut } = useAuth();
   const [role, setRole] = useState<Role>("student");
   const [step, setStep] = useState(1);
   const [form, setForm] = useState<RegistrationForm>(initialForm);
@@ -193,6 +195,7 @@ export default function RegisterPage({ navigate }: { navigate: (p: Page) => void
           github_url: optionalString(form.github_url),
           career_goals: optionalString(form.career_goals),
         });
+        await refreshUser();
         navigate("student-dashboard");
         return;
       }
@@ -210,8 +213,10 @@ export default function RegisterPage({ navigate }: { navigate: (p: Page) => void
         mentorship_areas: optionalString(form.mentorship_areas),
         availability: optionalString(form.availability),
       });
+      await refreshUser();
       navigate("alumni-dashboard");
     } catch (err: any) {
+      signOut();
       alert(err.message || "Failed to complete registration");
     } finally {
       setRegistering(false);
@@ -238,6 +243,7 @@ export default function RegisterPage({ navigate }: { navigate: (p: Page) => void
         </div>
 
         <Card className="p-8">
+          <button onClick={() => navigate("industry-register")} className="mb-5 text-blue-700 font-medium hover:underline">Register as an industry partner</button>
           {/* Role toggle */}
           <div className="flex rounded-lg bg-gray-100 p-1 mb-7">
             {(["student", "alumni"] as const).map(r => (
